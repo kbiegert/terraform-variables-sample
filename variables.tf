@@ -3,12 +3,8 @@
 variable "testObject" {
   description = "This is a test variable of type object."
   type        = object({
-    key1 = string
-    key2 = object({
-        key3      = string
-        key4      = string
+      key2 = string
     })
-  })
 }
 
 variable "testString" {
