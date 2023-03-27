@@ -29,10 +29,10 @@ variable "testBool" {
 
 variable "testList" {
   description = "This is a test variable of type list."
-  type        = list
+  type        = list(number)
 }
 
 variable "testMap" {
   description = "This is a test variable of type map."
-  type        = map
+  type        = map(string)
 }
