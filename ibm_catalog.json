@@ -1,10 +1,9 @@
 {
     "products": [
         {
-            "name": "variable sample",
+            "name": "variable-sample",
             "label": "variable-sample-test",
             "version": "0.0.1",
-            "product_kind": "solution", 
             "tags": [ "virtualservers" ],
             "keywords": [ "keyword1", "keyword2" ],
             "short_description": "short description text",
@@ -14,7 +13,6 @@
             "flavors": [
                 {
                     "terraform_version": "1.2",
-                    "install_type": "fullstack",
                     "configuration": [
                         {
                             "custom_config": {},
