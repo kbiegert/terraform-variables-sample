@@ -36,3 +36,9 @@ variable "testMap" {
   description = "This is a test variable of type map."
   type        = map(string)
 }
+
+variable "testPassword" {
+  description = "This is a test password with no default value"
+  type        = string
+  sensitive   = true
+}
