@@ -77,6 +77,11 @@
                             "key": "testString",
                             "required": false,
                             "type": "string"
+                        },
+                        {
+                            "description": "This description was provided by the manifest file - also set to required by manifest.",
+                            "key": "testConfigOverride",
+                            "required": true
                         }
                     ],
                     "outputs": [
