@@ -42,12 +42,3 @@ variable "testPassword" {
   type        = string
   sensitive   = true
 }
-
-variable "testNoConfig" {
-  description = "This variable does not have a configuration in the catalog manifest"
-  type        = string
-}
-
-variable "testConfigOverride" {
-  type        = string
-}
