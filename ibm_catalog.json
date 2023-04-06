@@ -74,6 +74,11 @@
                             "type": "object"
                         },
                         {
+                            "custom_config": {
+                                "grouping": "deployment",
+                                "original_grouping": "deployment",
+                                "type": "json_editor"
+                            },
                             "key": "testString"
                         },
                         {
