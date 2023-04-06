@@ -4,6 +4,7 @@
             "name": "variable-sample",
             "label": "variable-sample-test",
             "version": "0.0.1",
+            "product_kind": "solution",
             "tags": [ "virtualservers" ],
             "keywords": [ "keyword1", "keyword2" ],
             "short_description": "short description text",
@@ -14,6 +15,7 @@
                 {
                     "working_directory" : "defaultflavor/workingdirectory",
                     "terraform_version": "1.2",
+                    "install_type": "fullstack",
                     "configuration": [
                         {
                             "custom_config": {},
@@ -70,13 +72,12 @@
                             "type": "object"
                         },
                         {
-                            "custom_config": {},
-                            "default_value": "__NOT_SET__",
-                            "description": "This is a test variable of type string.",
-                            "hidden": false,
-                            "key": "testString",
-                            "required": false,
-                            "type": "string"
+                            "custom_config": {
+                                "grouping": "deployment",
+                                "original_grouping": "deployment",
+                                "type": "json_editor"
+                            },
+                            "key": "testString"
                         },
                         {
                             "description": "This description was provided by the manifest file - also set to required by manifest.",
