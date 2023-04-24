@@ -45,5 +45,5 @@ variable "testPassword" {
 
 variable "testOptions" {
   description = "This is a test options array"
-  type = list(string)
+  type = string
 }
