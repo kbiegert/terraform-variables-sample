@@ -85,6 +85,25 @@
                             "description": "This description was provided by the manifest file - also set to required by manifest.",
                             "key": "testConfigOverride",
                             "required": true
+                        },
+                        {
+                            "key": "testOptions",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "This is a test string options array",
+                            "required": false,
+                            "options": [
+                                {
+                                    "displayname": "foo",
+                                    "value": "foo"
+                                },
+                                {
+                                    "displayname": "bar",
+                                    "value": "bar"
+                                }
+                            ],
+                            "hidden": false,
+                            "custom_config": {}
                         }
                     ],
                     "outputs": [

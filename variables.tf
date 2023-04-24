@@ -42,3 +42,8 @@ variable "testPassword" {
   type        = string
   sensitive   = true
 }
+
+variable "testOptions" {
+  description = "This is a test options array"
+  type = list(string)
+}
