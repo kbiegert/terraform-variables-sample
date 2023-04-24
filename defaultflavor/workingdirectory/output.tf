@@ -32,3 +32,8 @@ output testMap {
     description = "output of test map"
     value = var.testMap
 }
+
+output testOptions {
+    description = "output of testOptions list"
+    value = var.testOptions
+}

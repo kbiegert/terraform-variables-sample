@@ -43,11 +43,7 @@ variable "testPassword" {
   sensitive   = true
 }
 
-variable "testNoConfig" {
-  description = "This variable does not have a configuration in the catalog manifest"
-  type        = string
-}
-
-variable "testConfigOverride" {
-  type        = string
+variable "testOptions" {
+  description = "This is a test options array"
+  type = list(string)
 }
