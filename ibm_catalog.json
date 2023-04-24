@@ -87,6 +87,9 @@
                             "required": true
                         },
                         {
+                            "key": "testPassword"
+                        },
+                        {
                             "key": "testOptions",
                             "type": "string",
                             "default_value": "",
