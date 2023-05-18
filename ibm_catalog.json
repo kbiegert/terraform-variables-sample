@@ -205,7 +205,201 @@
                             }
                         ]
                     }
-                }
+                },
+                {
+                    "label": "Root Variation",
+                    "name": "rootvariation",
+                    "working_directory" : ".",
+                    "terraform_version": "1.2",
+                    "install_type": "fullstack",
+                    "configuration": [
+                        {
+                            "custom_config": {},
+                            "default_value": false,
+                            "description": "This is a test variable of type bool.",
+                            "hidden": false,
+                            "key": "testBool",
+                            "required": false,
+                            "type": "boolean"
+                        },
+                        {
+                            "custom_config": {},
+                            "default_value": "__NOT_SET__",
+                            "description": "This is a test variable of type list.",
+                            "hidden": false,
+                            "key": "testList",
+                            "required": false,
+                            "type": "string"
+                        },
+                        {
+                            "custom_config": {},
+                            "default_value": "__NOT_SET__",
+                            "description": "This is a test variable of type map.",
+                            "hidden": false,
+                            "key": "testMap",
+                            "required": false,
+                            "type": "string"
+                        },
+                        {
+                            "custom_config": {},
+                            "default_value": "__NOT_SET__",
+                            "description": "This is a test variable of type float.",
+                            "hidden": false,
+                            "key": "testNumberFloat",
+                            "required": false,
+                            "type": "number"
+                        },
+                        {
+                            "custom_config": {},
+                            "default_value": "__NOT_SET__",
+                            "description": "This is a test variable of type integer.",
+                            "hidden": false,
+                            "key": "testNumberInt",
+                            "required": false,
+                            "type": "number"
+                        },
+                        {
+                            "custom_config": {},
+                            "default_value": "__NOT_SET__",
+                            "description": "This is a test variable of type object.",
+                            "hidden": false,
+                            "key": "testObject",
+                            "required": false,
+                            "type": "object"
+                        },
+                        {
+                            "custom_config": {
+                                "grouping": "deployment",
+                                "original_grouping": "deployment",
+                                "type": "json_editor"
+                            },
+                            "key": "testString"
+                        },
+                        {
+                            "description": "This description was provided by the manifest file - also set to required by manifest.",
+                            "key": "testConfigOverride",
+                            "required": true
+                        },
+                        {
+                            "key": "testPassword"
+                        },
+                        {
+                            "key": "testOptions",
+                            "type": "string",
+                            "default_value": "",
+                            "description": "This is a test string options array",
+                            "required": false,
+                            "options": [
+                                {
+                                    "displayname": "foo",
+                                    "value": "foo"
+                                },
+                                {
+                                    "displayname": "bar",
+                                    "value": "bar"
+                                }
+                            ],
+                            "hidden": false,
+                            "custom_config": {}
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "description": "output of test number as integer",
+                            "key": "testNumberInt"
+                        },
+                        {
+                            "description": "output of test number as float",
+                            "key": "testNumberFloat"
+                        },
+                        {
+                            "description": "output of test bool",
+                            "key": "testBool"
+                        },
+                        {
+                            "description": "output of test list",
+                            "key": "testList"
+                        },
+                        {
+                            "description": "output of test map",
+                            "key": "testMap"
+                        },
+                        {
+                            "description": "output of test object type",
+                            "key": "testObject"
+                        },
+                        {
+                            "description": "output of test string type",
+                            "key": "testString"
+                        }
+                    ],
+                    "compliance": {
+                        "controls": [
+                            {
+                                "profile_name": "SLZ compliance v0.1.1",
+                                "control_id": "AC-2(c)"
+                            },
+                            {
+                                "profile_name": "SLZ compliance v0.1.1",
+                                "control_id": "AC-2(i)"
+                            },
+                            {
+                                "profile_name": "SLZ compliance v0.1.1",
+                                "control_id": "AC-6-0"
+                            },
+                            {
+                                "profile_name": "SLZ compliance v0.1.1",
+                                "control_id": "CM-2"
+                            },
+                            {
+                                "profile_name": "SLZ compliance v0.1.1",
+                                "control_id": "SC-12"
+                            },
+                            {
+                                "profile_name": "SLZ compliance v0.1.1",
+                                "control_id": "SC-36"
+                            }
+                        ]
+                    },
+                    "iam_permissions": [
+                        {
+                            "role_crns": [
+                                "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+                            ],
+                            "service_name": "kms"
+                        },
+                        {
+                            "role_crns": [
+                                "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                                "crn:v1:bluemix:public:iam::::role:Administrator"
+                            ],
+                            "service_name": "is.vpc"
+                        }
+                    ],
+                    "architecture": {
+                        "descriptions": "",
+                        "features": [
+                            {
+                                "title": "Customized",
+                                "description": "Yes"
+                            },
+                            {
+                                "title": "Separate VPC for management",
+                                "description": "Yes"
+                            }
+                        ],
+                        "diagrams": [
+                            {
+                                "diagram": {
+                                    "caption": "Custom Edge variation",
+                                    "url": "https://raw.githubusercontent.com/IBM/customized-deployable-architecture/main/images/custom-slz.svg",
+                                    "metadata": []
+                                },
+                                "description": "Custom Edge variation of Secure infrastructure on VPC for regulated industries requires at least 2 CPUs and 4 GB of memory.\n\nSecure infrastructure on VPC for regulated industries is implemented with virtual servers. It utilizes two separate Virtual Private Clouds (VPC), a Management VPC and a Workload VPC, to manage the environment and the deployed workload. Each VPC is a multi-zoned, multi-subnet implementation that keeps your workloads secure.\n\nVirtual Private Endpoints connect the VPCs to each other and to IBM Cloud services, including Key Protect, IAM, Container Registry, Object Storage, and any additional services. IBM Cloud services are configured for storage and key management.\n\nIBM Cloud Flow Logs for VPC enable the collection, storage, and presentation of information about the Internet Protocol (IP) traffic that is going to and from network interfaces within your VPC. In addition, Activity Tracker logs events from enabled services. IBM Cloud Flow Logs for VPC and Activity Tracker are included in this configuration. Additional security services can be added such as Hyper Connect Crypto Service."
+                            }
+                        ]
+                    }
+                },
             ]
         }        
     ]
