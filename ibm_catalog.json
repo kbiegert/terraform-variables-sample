@@ -7,16 +7,6 @@
             "product_kind": "solution",
             "tags": [ "virtualservers" ],
             "keywords": [ "keyword1", "keyword2" ],
-            "licenses": [
-                {
-                    "name": "ApacheTest",
-                    "url": "https://opensource.org/license/apache-2-0/"
-                },
-                {
-                    "name": "ApacheTest2",
-                    "url": "https://opensource.org/license/apache-2-0/"
-                }
-            ],
             "short_description": "short description text",
             "long_description": "long description text",
             "offering_docs_url": "https://raw.githubusercontent.com/main/README.md",
@@ -28,6 +18,16 @@
                     "working_directory" : "defaultflavor/workingdirectory",
                     "terraform_version": "1.2",
                     "install_type": "fullstack",
+                    "licenses": [
+                        {
+                            "name": "ApacheTest",
+                            "url": "https://opensource.org/license/apache-2-0/"
+                        },
+                        {
+                            "name": "ApacheTest2",
+                            "url": "https://opensource.org/license/apache-2-0/"
+                        }
+                    ],
                     "configuration": [
                         {
                             "custom_config": {},
