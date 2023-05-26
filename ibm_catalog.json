@@ -15,7 +15,7 @@
                 {
                     "label": "Root Variation",
                     "name": "rootvariation",
-                    "working_directory" : "foo",
+                    "working_directory" : "./",
                     "terraform_version": "1.2",
                     "install_type": "fullstack",
                     "configuration": [
