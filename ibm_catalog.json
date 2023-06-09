@@ -62,7 +62,7 @@
                             "description": "This is a test variable of type float.",
                             "hidden": false,
                             "key": "testNumberFloat",
-                            "required": false,
+                            "required": true,
                             "type": "number"
                         },
                         {
@@ -71,7 +71,7 @@
                             "description": "This is a test variable of type integer.",
                             "hidden": false,
                             "key": "testNumberInt",
-                            "required": false,
+                            "required": true,
                             "type": "number"
                         },
                         {

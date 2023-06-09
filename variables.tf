@@ -13,8 +13,9 @@ variable "testString" {
 }
 
 variable "testNumberInt" {
-  description = "This is a test variable of type integer."
+  description = "This is a test variable of type integer - not required in tf"
   type        = number
+  default     = 1
 }
 
 variable "testNumberFloat" {
@@ -25,6 +26,7 @@ variable "testNumberFloat" {
 variable "testBool" {
   description = "This is a test variable of type bool."
   type        = bool
+  default = false
 }
 
 variable "testList" {
