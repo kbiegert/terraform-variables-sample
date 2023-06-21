@@ -28,6 +28,9 @@
                             "url": "https://opensource.org/license/apache-2-0/"
                         }
                     ],
+                    "schematics_env_values": {
+                        "value": "[{\"name\": \"TF_LOG\",\"value\": \"TRACE\",\"secure\": true,\"hidden\": true},{\"name\": \"TF_IGNORE\",\"value\": \"TRACE\",\"secure\": false,\"hidden\": false}]"
+                    },
                     "configuration": [
                         {
                             "custom_config": {},
