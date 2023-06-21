@@ -29,7 +29,7 @@
                         }
                     ],
                     "schematics_env_values": {
-                        "value": "[{\"name\": \"TF_LOG\",\"value\": \"TRACE\",\"secure\": true,\"hidden\": true},{\"name\": \"TF_IGNORE\",\"value\": \"TRACE\",\"secure\": false,\"hidden\": false}]"
+                        "sm_ref": "cmsm_v1:{\"id\":\"4e2a6dec-7c95-6db6-3c87-49b684f4ebaa\",\"service_id\":\"crn:v1:staging:public:secrets-manager:eu-gb:a/826252181a699e6271b11365580dc796:7d037792-ae88-4c89-a35a-1831e0f5345d::\",\"group_id\":\"3f0ec6a7-4615-59c3-aaf7-6f314227392d\",\"resource_group_id\":\"3cd39c99a470469532e9e5865a511b5d\",\"region\":\"eu-gb\",\"type\":\"arbitrary\"}" 
                     },
                     "configuration": [
                         {
