@@ -3,7 +3,6 @@
         {
             "name": "variable-sample",
             "label": "variable-sample-test",
-            "version": "0.0.1",
             "product_kind": "solution",
             "tags": [ "virtualservers" ],
             "keywords": [ "keyword1", "keyword2" ],
@@ -17,7 +16,7 @@
                     "name": "quickstart",
                     "working_directory" : "defaultflavor/workingdirectory",
                     "terraform_version": "1.2",
-                    "install_type": "fullstack",
+                    "install_type": "extension",
                     "licenses": [
                         {
                             "name": "ApacheTest",
@@ -28,158 +27,16 @@
                             "url": "https://opensource.org/license/apache-2-0/"
                         }
                     ],
-                    "schematics_env_values": {
-                        "sm_ref": "cmsm_v1:{\"id\":\"4e2a6dec-7c95-6db6-3c87-49b684f4ebaa\",\"service_id\":\"crn:v1:staging:public:secrets-manager:eu-gb:a/826252181a699e6271b11365580dc796:7d037792-ae88-4c89-a35a-1831e0f5345d::\",\"group_id\":\"3f0ec6a7-4615-59c3-aaf7-6f314227392d\",\"resource_group_id\":\"3cd39c99a470469532e9e5865a511b5d\",\"region\":\"eu-gb\",\"type\":\"arbitrary\"}" 
-                    },
-                    "configuration": [
-                        {
-                            "custom_config": {},
-                            "default_value": false,
-                            "description": "This is a test variable of type bool.",
-                            "hidden": false,
-                            "key": "testBool",
-                            "required": false,
-                            "type": "boolean"
-                        },
-                        {
-                            "custom_config": {},
-                            "default_value": "__NOT_SET__",
-                            "description": "This is a test variable of type list.",
-                            "hidden": false,
-                            "key": "testList",
-                            "required": false,
-                            "type": "string"
-                        },
-                        {
-                            "custom_config": {},
-                            "default_value": "__NOT_SET__",
-                            "description": "This is a test variable of type map.",
-                            "hidden": false,
-                            "key": "testMap",
-                            "required": false,
-                            "type": "string"
-                        },
-                        {
-                            "custom_config": {},
-                            "default_value": "__NOT_SET__",
-                            "description": "This is a test variable of type float.",
-                            "hidden": false,
-                            "key": "testNumberFloat",
-                            "required": true,
-                            "type": "number"
-                        },
-                        {
-                            "custom_config": {},
-                            "default_value": "__NOT_SET__",
-                            "description": "This is a test variable of type integer.",
-                            "hidden": false,
-                            "key": "testNumberInt",
-                            "required": true,
-                            "type": "number"
-                        },
-                        {
-                            "custom_config": {},
-                            "default_value": "__NOT_SET__",
-                            "description": "This is a test variable of type object.",
-                            "hidden": false,
-                            "key": "testObject",
-                            "required": false,
-                            "type": "object"
-                        },
-                        {
-                            "custom_config": {
-                                "grouping": "deployment",
-                                "original_grouping": "deployment",
-                                "type": "json_editor"
-                            },
-                            "key": "testString"
-                        },
-                        {
-                            "description": "This description was provided by the manifest file - also set to required by manifest.",
-                            "key": "testConfigOverride",
-                            "required": true
-                        },
-                        {
-                            "key": "testPassword"
-                        },
-                        {
-                            "key": "testOptions",
-                            "type": "string",
-                            "default_value": "",
-                            "description": "This is a test string options array",
-                            "required": false,
-                            "options": [
-                                {
-                                    "displayname": "foo",
-                                    "value": "foo"
-                                },
-                                {
-                                    "displayname": "bar",
-                                    "value": "bar"
-                                }
-                            ],
-                            "hidden": false,
-                            "custom_config": {}
-                        }
-                    ],
                     "outputs": [
                         {
-                            "description": "output of test number as integer",
-                            "key": "testNumberInt"
+                            "description": "Use this to echo a version",
+                            "key": "echoVersionValue"
                         },
                         {
-                            "description": "output of test number as float",
-                            "key": "testNumberFloat"
-                        },
-                        {
-                            "description": "output of test bool",
-                            "key": "testBool"
-                        },
-                        {
-                            "description": "output of test list",
-                            "key": "testList"
-                        },
-                        {
-                            "description": "output of test map",
-                            "key": "testMap"
-                        },
-                        {
-                            "description": "output of test object type",
-                            "key": "testObject"
-                        },
-                        {
-                            "description": "output of test string type",
-                            "key": "testString"
+                            "description": "Use this to echo an install type - setting to EXTENSION",
+                            "key": "echoInstallType"
                         }
                     ],
-                    "compliance": {
-                        "controls": [
-                            {
-                                "profile_name": "SLZ compliance v0.1.1",
-                                "control_id": "AC-2(c)"
-                            },
-                            {
-                                "profile_name": "SLZ compliance v0.1.1",
-                                "control_id": "AC-2(i)"
-                            },
-                            {
-                                "profile_name": "SLZ compliance v0.1.1",
-                                "control_id": "AC-6-0"
-                            },
-                            {
-                                "profile_name": "SLZ compliance v0.1.1",
-                                "control_id": "CM-2"
-                            },
-                            {
-                                "profile_name": "SLZ compliance v0.1.1",
-                                "control_id": "SC-12"
-                            },
-                            {
-                                "profile_name": "SLZ compliance v0.1.1",
-                                "control_id": "SC-36"
-                            }
-                        ]
-                    },
                     "iam_permissions": [
                         {
                             "role_crns": [
@@ -225,155 +82,16 @@
                     "working_directory" : ".",
                     "terraform_version": "1.2",
                     "install_type": "fullstack",
-                    "configuration": [
-                        {
-                            "custom_config": {},
-                            "default_value": false,
-                            "description": "This is a test variable of type bool.",
-                            "hidden": false,
-                            "key": "testBool",
-                            "required": false,
-                            "type": "boolean"
-                        },
-                        {
-                            "custom_config": {},
-                            "default_value": "__NOT_SET__",
-                            "description": "This is a test variable of type list.",
-                            "hidden": false,
-                            "key": "testList",
-                            "required": false,
-                            "type": "string"
-                        },
-                        {
-                            "custom_config": {},
-                            "default_value": "__NOT_SET__",
-                            "description": "This is a test variable of type map.",
-                            "hidden": false,
-                            "key": "testMap",
-                            "required": false,
-                            "type": "string"
-                        },
-                        {
-                            "custom_config": {},
-                            "default_value": "__NOT_SET__",
-                            "description": "This is a test variable of type float.",
-                            "hidden": false,
-                            "key": "testNumberFloat",
-                            "required": false,
-                            "type": "number"
-                        },
-                        {
-                            "custom_config": {},
-                            "default_value": "__NOT_SET__",
-                            "description": "This is a test variable of type integer.",
-                            "hidden": false,
-                            "key": "testNumberInt",
-                            "required": false,
-                            "type": "number"
-                        },
-                        {
-                            "custom_config": {},
-                            "default_value": "__NOT_SET__",
-                            "description": "This is a test variable of type object.",
-                            "hidden": false,
-                            "key": "testObject",
-                            "required": false,
-                            "type": "object"
-                        },
-                        {
-                            "custom_config": {
-                                "grouping": "deployment",
-                                "original_grouping": "deployment",
-                                "type": "json_editor"
-                            },
-                            "key": "testString"
-                        },
-                        {
-                            "description": "This description was provided by the manifest file - also set to required by manifest.",
-                            "key": "testConfigOverride",
-                            "required": true
-                        },
-                        {
-                            "key": "testPassword"
-                        },
-                        {
-                            "key": "testOptions",
-                            "type": "string",
-                            "default_value": "",
-                            "description": "This is a test string options array",
-                            "required": false,
-                            "options": [
-                                {
-                                    "displayname": "foo",
-                                    "value": "foo"
-                                },
-                                {
-                                    "displayname": "bar",
-                                    "value": "bar"
-                                }
-                            ],
-                            "hidden": false,
-                            "custom_config": {}
-                        }
-                    ],
                     "outputs": [
                         {
-                            "description": "output of test number as integer",
-                            "key": "testNumberInt"
+                            "description": "Use this to echo a version",
+                            "key": "echoVersionValue"
                         },
                         {
-                            "description": "output of test number as float",
-                            "key": "testNumberFloat"
-                        },
-                        {
-                            "description": "output of test bool",
-                            "key": "testBool"
-                        },
-                        {
-                            "description": "output of test list",
-                            "key": "testList"
-                        },
-                        {
-                            "description": "output of test map",
-                            "key": "testMap"
-                        },
-                        {
-                            "description": "output of test object type",
-                            "key": "testObject"
-                        },
-                        {
-                            "description": "output of test string type",
-                            "key": "testString"
+                            "description": "Use this to echo an install type - setting to FULLSTACK",
+                            "key": "echoInstallType"
                         }
                     ],
-                    "compliance": {
-                        "controls": [
-                            {
-                                "profile_name": "SLZ compliance v0.1.1",
-                                "control_id": "AC-2(c)"
-                            },
-                            {
-                                "profile_name": "SLZ compliance v0.1.1",
-                                "control_id": "AC-2(i)"
-                            },
-                            {
-                                "profile_name": "SLZ compliance v0.1.1",
-                                "control_id": "AC-6-0"
-                            },
-                            {
-                                "profile_name": "SLZ compliance v0.1.1",
-                                "control_id": "CM-2"
-                            },
-                            {
-                                "profile_name": "SLZ compliance v0.1.1",
-                                "control_id": "SC-12"
-                            },
-                            {
-                                "profile_name": "SLZ compliance v0.1.1",
-                                "control_id": "SC-36"
-                            }
-                        ]
-                    },
                     "iam_permissions": [
                         {
                             "role_crns": [
