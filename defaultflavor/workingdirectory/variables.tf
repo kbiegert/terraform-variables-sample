@@ -6,5 +6,5 @@ variable "echoVersionValue" {
 variable "echoInstallType" {
   description = "Use this to echo an install type - setting to FULLSTACK"
   type        = string
-  default     = "FULLSTACK"
+  default     = "EXTENSION"
 }
