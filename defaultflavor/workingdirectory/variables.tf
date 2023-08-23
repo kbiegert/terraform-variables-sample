@@ -1,49 +1,11 @@
-
-
-variable "testObject" {
-  description = "This is a test variable of type object."
-  type        = object({
-      key2 = string
-    })
-}
-
-variable "testString" {
-  description = "This is a test variable of type string."
+variable "echoVersionValue" {
+  description = "Use this to echo a version."
   type        = string
+  default     = "B"
 }
 
-variable "testNumberInt" {
-  description = "This is a test variable of type integer."
-  type        = number
-}
-
-variable "testNumberFloat" {
-  description = "This is a test variable of type float."
-  type        = number
-}
-
-variable "testBool" {
-  description = "This is a test variable of type bool."
-  type        = bool
-}
-
-variable "testList" {
-  description = "This is a test variable of type list."
-  type        = list(number)
-}
-
-variable "testMap" {
-  description = "This is a test variable of type map."
-  type        = map(string)
-}
-
-variable "testPassword" {
-  description = "This is a test password with no default value"
+variable "echoInstallType" {
+  description = "Use this to echo an install type - setting to FULLSTACK"
   type        = string
-  sensitive   = true
-}
-
-variable "testOptions" {
-  description = "This is a test options array"
-  type = string
+  default     = "EXTENSION"
 }
