@@ -9,3 +9,9 @@ variable "echoInstallType" {
   type        = string
   default     = "FULLSTACK"
 }
+
+variable "echoList" {
+  description = "this is a test list"
+  type = list(string)
+  #default = ["string1", "string2"]
+}
