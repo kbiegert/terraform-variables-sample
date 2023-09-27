@@ -1,22 +1,48 @@
 {
     "products": [
         {
-            "name": "variable-sample",
-            "label": "variable-sample-test",
-            "product_kind": "solution",
-            "tags": [ "virtualservers" ],
-            "keywords": [ "keyword1", "keyword2" ],
-            "short_description": "short description text",
-            "long_description": "long description text",
-            "offering_docs_url": "https://raw.githubusercontent.com/main/README.md",
-            "offering_icon_url": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4gPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJMYXllcl8xIiBkYXRhLW5hbWU9IkxheWVyIDEiIHZpZXdCb3g9IjAgMCAxMjAgMTM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2E1MjA1Njt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPjAxX0lOU1RBTkFfSWNvblNldDwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNTIsNC42NCw5LjU2LDI5LjE1QTE2LDE2LDAsMCwwLDEuNTcsNDNWOTJhMTYsMTYsMCwwLDAsOCwxMy44NEw1MiwxMzAuMzZhMTYsMTYsMCwwLDAsMTYsMGw0Mi40NS0yNC41MWExNiwxNiwwLDAsMCw4LTEzLjg0VjQzYTE2LDE2LDAsMCwwLTgtMTMuODRMNjgsNC42NEExNiwxNiwwLDAsMCw1Miw0LjY0WiI+PC9wYXRoPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg5LjQsNDEuNTlBLjc2Ljc2LDAsMCwwLDg4LjM0LDQxYy0xNy44MSw3LjQ5LTM4LDIwLjQ1LTQ2LjgyLDQwYTEuNDQsMS40NCwwLDAsMS0xLjIxLjgzLDEuNDcsMS40NywwLDAsMS0uNjUtLjEyLDEuNCwxLjQsMCwwLDEtLjctMS44NmM5LTE5LjksMjkuMTktMzMuMTUsNDcuMjctNDFhLjY1LjY1LDAsMCwwLS4xNS0xLjIzLDMuMSwzLjEsMCwwLDAtLjU0LS4wNWMtMTUuNzgtLjQ1LTQwLjg1LDEwLjc4LTQ5LjQ1LDI2QzMyLDcwLjg1LDMyLDc4LjM3LDM2LjIyLDg1LjMzYy0uMTguNDQtLjg2LDIuNDYtMSwyLjg4TDMxLDgzLjljLS4yMS0uMjMtLjUyLDAtLjQxLjMxbDMsOC40NWMtLjUsMS41My0uNDQsMS40OS0uODYsMy4wN2ExLjQsMS40LDAsMCwwLDEsMS43MiwxLjI3LDEuMjcsMCwwLDAsLjQzLDAsMS40MSwxLjQxLDAsMCwwLDEuMjktMWMuMzMtMS4yNi40MS0xLjU3LjgtMi44bDcuMzItNC44OWMuMjUtLjE2LjE3LS41NS0uMTMtLjQ5bC01LjY0LjljLjI0LS41OS43My0yLjExLDEtMi43QzUyLDg0LjIsNjAsNzguNCw2Ni4yLDcxLjQ5QS45LjksMCwwLDAsNjUuNTEsNzBhMzcuNjYsMzcuNjYsMCwwLDAtOS4xMy45M2MtMS4yLjM0LTEuODMtLjM4LTEuNjMtMS4xMy4zOS0xLjQzLDkuNS0zLDE0LjQtMi44OGExLDEsMCwwLDAsLjgxLS4zNGMuNTctLjc1LDkuODQtMTQuMjcsMTcuNjYtMjIuMDcsMS4yNS0xLjI4LDEuODYtMi4wOCwxLjc4LTIuOSI+PC9wYXRoPjwvc3ZnPiA=",
             "flavors": [
                 {
-                    "label": "QuickStart",
-                    "name": "quickstart",
-                    "working_directory" : "defaultflavor/workingdirectory",
-                    "terraform_version": "1.2",
+                    "architecture": {
+                        "descriptions": "",
+                        "diagrams": [
+                            {
+                                "description": "Custom Edge variation of Secure infrastructure on VPC for regulated industries requires at least 2 CPUs and 4 GB of memory.\n\nSecure infrastructure on VPC for regulated industries is implemented with virtual servers. It utilizes two separate Virtual Private Clouds (VPC), a Management VPC and a Workload VPC, to manage the environment and the deployed workload. Each VPC is a multi-zoned, multi-subnet implementation that keeps your workloads secure.\n\nVirtual Private Endpoints connect the VPCs to each other and to IBM Cloud services, including Key Protect, IAM, Container Registry, Object Storage, and any additional services. IBM Cloud services are configured for storage and key management.\n\nIBM Cloud Flow Logs for VPC enable the collection, storage, and presentation of information about the Internet Protocol (IP) traffic that is going to and from network interfaces within your VPC. In addition, Activity Tracker logs events from enabled services. IBM Cloud Flow Logs for VPC and Activity Tracker are included in this configuration. Additional security services can be added such as Hyper Connect Crypto Service.",
+                                "diagram": {
+                                    "caption": "Custom Edge variation",
+                                    "metadata": [],
+                                    "url": "https://raw.githubusercontent.com/IBM/customized-deployable-architecture/main/images/custom-slz.svg"
+                                }
+                            }
+                        ],
+                        "features": [
+                            {
+                                "description": "Yes",
+                                "title": "Customized"
+                            },
+                            {
+                                "description": "Yes",
+                                "title": "Separate VPC for management"
+                            }
+                        ]
+                    },
+                    "iam_permissions": [
+                        {
+                            "role_crns": [
+                                "crn:v1:bluemix:public:iam::::serviceRole:Manager"
+                            ],
+                            "service_name": "kms"
+                        },
+                        {
+                            "role_crns": [
+                                "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                                "crn:v1:bluemix:public:iam::::role:Administrator"
+                            ],
+                            "service_name": "is.vpc"
+                        }
+                    ],
                     "install_type": "extension",
+                    "label": "QuickStart",
                     "licenses": [
                         {
                             "name": "ApacheTest",
@@ -27,6 +53,7 @@
                             "url": "https://opensource.org/license/apache-2-0/"
                         }
                     ],
+                    "name": "quickstart",
                     "outputs": [
                         {
                             "description": "Use this to echo a version",
@@ -37,6 +64,33 @@
                             "key": "echoInstallType"
                         }
                     ],
+                    "terraform_version": "1.2",
+                    "working_directory": "defaultflavor/workingdirectory"
+                },
+                {
+                    "architecture": {
+                        "descriptions": "",
+                        "diagrams": [
+                            {
+                                "description": "Custom Edge variation of Secure infrastructure on VPC for regulated industries requires at least 2 CPUs and 4 GB of memory.\n\nSecure infrastructure on VPC for regulated industries is implemented with virtual servers. It utilizes two separate Virtual Private Clouds (VPC), a Management VPC and a Workload VPC, to manage the environment and the deployed workload. Each VPC is a multi-zoned, multi-subnet implementation that keeps your workloads secure.\n\nVirtual Private Endpoints connect the VPCs to each other and to IBM Cloud services, including Key Protect, IAM, Container Registry, Object Storage, and any additional services. IBM Cloud services are configured for storage and key management.\n\nIBM Cloud Flow Logs for VPC enable the collection, storage, and presentation of information about the Internet Protocol (IP) traffic that is going to and from network interfaces within your VPC. In addition, Activity Tracker logs events from enabled services. IBM Cloud Flow Logs for VPC and Activity Tracker are included in this configuration. Additional security services can be added such as Hyper Connect Crypto Service.",
+                                "diagram": {
+                                    "caption": "Custom Edge variation",
+                                    "metadata": [],
+                                    "url": "https://raw.githubusercontent.com/IBM/customized-deployable-architecture/main/images/custom-slz.svg"
+                                }
+                            }
+                        ],
+                        "features": [
+                            {
+                                "description": "Yes",
+                                "title": "Customized"
+                            },
+                            {
+                                "description": "Yes",
+                                "title": "Separate VPC for management"
+                            }
+                        ]
+                    },
                     "iam_permissions": [
                         {
                             "role_crns": [
@@ -52,36 +106,9 @@
                             "service_name": "is.vpc"
                         }
                     ],
-                    "architecture": {
-                        "descriptions": "",
-                        "features": [
-                            {
-                                "title": "Customized",
-                                "description": "Yes"
-                            },
-                            {
-                                "title": "Separate VPC for management",
-                                "description": "Yes"
-                            }
-                        ],
-                        "diagrams": [
-                            {
-                                "diagram": {
-                                    "caption": "Custom Edge variation",
-                                    "url": "https://raw.githubusercontent.com/IBM/customized-deployable-architecture/main/images/custom-slz.svg",
-                                    "metadata": []
-                                },
-                                "description": "Custom Edge variation of Secure infrastructure on VPC for regulated industries requires at least 2 CPUs and 4 GB of memory.\n\nSecure infrastructure on VPC for regulated industries is implemented with virtual servers. It utilizes two separate Virtual Private Clouds (VPC), a Management VPC and a Workload VPC, to manage the environment and the deployed workload. Each VPC is a multi-zoned, multi-subnet implementation that keeps your workloads secure.\n\nVirtual Private Endpoints connect the VPCs to each other and to IBM Cloud services, including Key Protect, IAM, Container Registry, Object Storage, and any additional services. IBM Cloud services are configured for storage and key management.\n\nIBM Cloud Flow Logs for VPC enable the collection, storage, and presentation of information about the Internet Protocol (IP) traffic that is going to and from network interfaces within your VPC. In addition, Activity Tracker logs events from enabled services. IBM Cloud Flow Logs for VPC and Activity Tracker are included in this configuration. Additional security services can be added such as Hyper Connect Crypto Service."
-                            }
-                        ]
-                    }
-                },
-                {
+                    "install_type": "fullstack",
                     "label": "Root Variation",
                     "name": "rootvariation",
-                    "working_directory" : ".",
-                    "terraform_version": "1.2",
-                    "install_type": "fullstack",
                     "outputs": [
                         {
                             "description": "Use this to echo a version",
@@ -92,46 +119,91 @@
                             "key": "echoInstallType"
                         }
                     ],
-                    "iam_permissions": [
-                        {
-                            "role_crns": [
-                                "crn:v1:bluemix:public:iam::::serviceRole:Manager"
-                            ],
-                            "service_name": "kms"
-                        },
-                        {
-                            "role_crns": [
-                                "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-                                "crn:v1:bluemix:public:iam::::role:Administrator"
-                            ],
-                            "service_name": "is.vpc"
-                        }
-                    ],
+                    "terraform_version": "1.2",
+                    "working_directory": "."
+                }
+            ],
+            "keywords": [
+                "keyword1",
+                "keyword2"
+            ],
+            "label": "variable-sample-test",
+            "long_description": "long description text",
+            "name": "variable-sample",
+            "offering_docs_url": "https://raw.githubusercontent.com/main/README.md",
+            "offering_icon_url": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4gPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJMYXllcl8xIiBkYXRhLW5hbWU9IkxheWVyIDEiIHZpZXdCb3g9IjAgMCAxMjAgMTM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2E1MjA1Njt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPjAxX0lOU1RBTkFfSWNvblNldDwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNTIsNC42NCw5LjU2LDI5LjE1QTE2LDE2LDAsMCwwLDEuNTcsNDNWOTJhMTYsMTYsMCwwLDAsOCwxMy44NEw1MiwxMzAuMzZhMTYsMTYsMCwwLDAsMTYsMGw0Mi40NS0yNC41MWExNiwxNiwwLDAsMCw4LTEzLjg0VjQzYTE2LDE2LDAsMCwwLTgtMTMuODRMNjgsNC42NEExNiwxNiwwLDAsMCw1Miw0LjY0WiI+PC9wYXRoPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg5LjQsNDEuNTlBLjc2Ljc2LDAsMCwwLDg4LjM0LDQxYy0xNy44MSw3LjQ5LTM4LDIwLjQ1LTQ2LjgyLDQwYTEuNDQsMS40NCwwLDAsMS0xLjIxLjgzLDEuNDcsMS40NywwLDAsMS0uNjUtLjEyLDEuNCwxLjQsMCwwLDEtLjctMS44NmM5LTE5LjksMjkuMTktMzMuMTUsNDcuMjctNDFhLjY1LjY1LDAsMCwwLS4xNS0xLjIzLDMuMSwzLjEsMCwwLDAtLjU0LS4wNWMtMTUuNzgtLjQ1LTQwLjg1LDEwLjc4LTQ5LjQ1LDI2QzMyLDcwLjg1LDMyLDc4LjM3LDM2LjIyLDg1LjMzYy0uMTguNDQtLjg2LDIuNDYtMSwyLjg4TDMxLDgzLjljLS4yMS0uMjMtLjUyLDAtLjQxLjMxbDMsOC40NWMtLjUsMS41My0uNDQsMS40OS0uODYsMy4wN2ExLjQsMS40LDAsMCwwLDEsMS43MiwxLjI3LDEuMjcsMCwwLDAsLjQzLDAsMS40MSwxLjQxLDAsMCwwLDEuMjktMWMuMzMtMS4yNi40MS0xLjU3LjgtMi44bDcuMzItNC44OWMuMjUtLjE2LjE3LS41NS0uMTMtLjQ5bC01LjY0LjljLjI0LS41OS43My0yLjExLDEtMi43QzUyLDg0LjIsNjAsNzguNCw2Ni4yLDcxLjQ5QS45LjksMCwwLDAsNjUuNTEsNzBhMzcuNjYsMzcuNjYsMCwwLDAtOS4xMy45M2MtMS4yLjM0LTEuODMtLjM4LTEuNjMtMS4xMy4zOS0xLjQzLDkuNS0zLDE0LjQtMi44OGExLDEsMCwwLDAsLjgxLS4zNGMuNTctLjc1LDkuODQtMTQuMjcsMTcuNjYtMjIuMDcsMS4yNS0xLjI4LDEuODYtMi4wOCwxLjc4LTIuOSI+PC9wYXRoPjwvc3ZnPiA=",
+            "product_kind": "solution",
+            "short_description": "short description text",
+            "tags": [
+                "virtualservers"
+            ]
+        },
+        {
+            "flavors": [
+                {
                     "architecture": {
-                        "descriptions": "",
-                        "features": [
-                            {
-                                "title": "Customized",
-                                "description": "Yes"
-                            },
-                            {
-                                "title": "Separate VPC for management",
-                                "description": "Yes"
-                            }
-                        ],
                         "diagrams": [
                             {
+                                "description": "This is a place holder diagram.  Please create one.",
                                 "diagram": {
-                                    "caption": "Custom Edge variation",
-                                    "url": "https://raw.githubusercontent.com/IBM/customized-deployable-architecture/main/images/custom-slz.svg",
-                                    "metadata": []
-                                },
-                                "description": "Custom Edge variation of Secure infrastructure on VPC for regulated industries requires at least 2 CPUs and 4 GB of memory.\n\nSecure infrastructure on VPC for regulated industries is implemented with virtual servers. It utilizes two separate Virtual Private Clouds (VPC), a Management VPC and a Workload VPC, to manage the environment and the deployed workload. Each VPC is a multi-zoned, multi-subnet implementation that keeps your workloads secure.\n\nVirtual Private Endpoints connect the VPCs to each other and to IBM Cloud services, including Key Protect, IAM, Container Registry, Object Storage, and any additional services. IBM Cloud services are configured for storage and key management.\n\nIBM Cloud Flow Logs for VPC enable the collection, storage, and presentation of information about the Internet Protocol (IP) traffic that is going to and from network interfaces within your VPC. In addition, Activity Tracker logs events from enabled services. IBM Cloud Flow Logs for VPC and Activity Tracker are included in this configuration. Additional security services can be added such as Hyper Connect Crypto Service."
+                                    "caption": "Place holder",
+                                    "url": "https://raw.githubusercontent.com/kbiegert/terraform-variables-sample/terraform_variables_sample-0.0.1-1695848365/architecture-diagram-placeholder.drawio.svg"
+                                }
+                            }
+                        ],
+                        "features": [
+                            {
+                                "description": "edit me to suit your needs",
+                                "title": "Sample feature"
                             }
                         ]
-                    }
+                    },
+                    "compliance": {},
+                    "configuration": [
+                        {
+                            "default_value": "B",
+                            "description": "Use this to echo a version.",
+                            "key": "echoVersionValue",
+                            "required": true,
+                            "type": "string"
+                        },
+                        {
+                            "default_value": "FULLSTACK",
+                            "description": "Use this to echo an install type - setting to FULLSTACK",
+                            "key": "echoInstallType",
+                            "required": true,
+                            "type": "string"
+                        },
+                        {
+                            "default_value": "[\"test\"]",
+                            "description": "this is a test list",
+                            "key": "echoList",
+                            "required": true,
+                            "type": "list(string)"
+                        }
+                    ],
+                    "iam_permissions": [],
+                    "install_type": "fullstack",
+                    "label": "Standard",
+                    "name": "standard",
+                    "working_directory": "./"
                 }
+            ],
+            "keywords": [
+                "terraform"
+            ],
+            "label": "terraform-variables-sample",
+            "long_description": "Detailed description to show at consumption",
+            "name": "terraform_variables_sample",
+            "offering_docs_url": "",
+            "offering_icon_url": "",
+            "product_kind": "solution",
+            "short_description": "Summary description to show on catalog tile",
+            "support_details": "Your support statement",
+            "tags": [
+                "compute",
+                "terraform"
             ]
-        }        
+        }
     ]
 }
