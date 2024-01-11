@@ -1,9 +1,9 @@
-output echoVersionValue {
-    description = "output of echoVersionValue"
-    value = var.echoVersionValue
+output a {
+    description = "output of variable named a"
+    value = var.a
 }
 
-output echoInstallType {
-    description = "output of echoInstallType"
-    value = var.echoInstallType
+output b {
+    description = "output of variable named b"
+    value = var.b
 }
