@@ -1,11 +1,5 @@
-variable "echoVersionValue" {
-  description = "Use this to echo a version."
+variable "a" {
+  description = "A simple string type variable with a default value."
   type        = string
-  default     = "B"
-}
-
-variable "echoInstallType" {
-  description = "Use this to echo an install type - setting to FULLSTACK"
-  type        = string
-  default     = "FULLSTACK"
+  default     = "A"
 }
