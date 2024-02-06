@@ -92,13 +92,6 @@
                             "key": "echoInstallType"
                         }
                     ],
-                    "configuration": [
-                        {
-                            "key": "echoList",
-                            "type": "list(string)",
-                            "required": true
-                        }
-                    ],
                     "iam_permissions": [
                         {
                             "role_crns": [
