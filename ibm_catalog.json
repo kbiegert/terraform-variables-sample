@@ -95,7 +95,7 @@
                     "configuration": [
                         {
                             "key": "echoList",
-                            "type": "array",
+                            "type": "list(string)",
                             "required": true
                         }
                     ],
