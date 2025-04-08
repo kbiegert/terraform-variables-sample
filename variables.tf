@@ -1,68 +1,19 @@
-variable "echoVersionValue" {
-  description = "Use this to echo a version."
+variable "thisOneisNullable" {
+  description = "This var has nullable set to true."
   type        = string
   default     = "B"
+  nullable    = true
 }
 
-variable "echoInstallType" {
-  description = "Use this to echo an install type - setting to FULLSTACK"
+variable "thisOneisNotNullable" {
+  description = "This var has nullable set to false"
   type        = string
   default     = "FULLSTACK"
+  nullable    = false
 }
 
-variable "echoList" {
-  description = "this is a test list"
-  type = list(string)
-  #default = ["string1", "string2"]
-}
-
-
-variable "testObject" {
-  description = "This is a test variable of type object."
-  type        = object({
-      key2 = string
-    })
-}
-
-variable "testString" {
-  description = "This is a test variable of type string."
+variable "thisOneisRegular" {
+  description = "This var does not have the nullable keyword"
   type        = string
-}
-
-variable "testNumberInt" {
-  description = "This is a test variable of type integer - not required in tf"
-  type        = number
-  default     = 1
-}
-
-variable "testNumberFloat" {
-  description = "This is a test variable of type float."
-  type        = number
-}
-
-variable "testBool" {
-  description = "This is a test variable of type bool."
-  type        = bool
-  default = false
-}
-
-variable "testList" {
-  description = "This is a test variable of type list."
-  type        = list(number)
-}
-
-variable "testMap" {
-  description = "This is a test variable of type map."
-  type        = map(string)
-}
-
-variable "testPassword" {
-  description = "This is a test password with no default value"
-  type        = string
-  sensitive   = true
-}
-
-variable "testOptions" {
-  description = "This is a test options array"
-  type = string
+  default     = "FULLSTACK"
 }
