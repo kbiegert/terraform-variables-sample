@@ -2,7 +2,6 @@ variable "echoVersionValue" {
   description = "Use this to echo a version."
   type        = string
   default     = "B"
-  nullable = false
 }
 
 variable "echoInstallType" {
