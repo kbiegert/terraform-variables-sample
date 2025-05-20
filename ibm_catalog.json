@@ -172,6 +172,16 @@
                             "service_name": "is.vpc"
                         }
                     ],
+                    "configuration": [
+                        {
+                            "key": "test_virtual_input",
+                            "type": "array",
+                            "default_value": "[\"all\"]",
+                            "description": "this is a test virtual input",
+                            "required": false,
+                            "virtual": true
+                        }
+                    ],
                     "architecture": {
                         "descriptions": "",
                         "features": [
