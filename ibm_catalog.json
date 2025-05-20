@@ -175,7 +175,7 @@
                     "configuration": [
                         {
                             "key": "test_virtual_input",
-                            "type": "array",
+                            "type": "list(string)",
                             "default_value": "[\"all\"]",
                             "description": "this is a test virtual input",
                             "required": false,
