@@ -13,7 +13,7 @@ variable "echoInstallType" {
 variable "echoList" {
   description = "this is a test list"
   type = list(string)
-  #default = ["string1", "string2"]
+  default = ["string1", "string2"]
 }
 
 
@@ -22,11 +22,13 @@ variable "testObject" {
   type        = object({
       key2 = string
     })
+  default = { "key2": "value2"}  
 }
 
 variable "testString" {
   description = "This is a test variable of type string."
   type        = string
+  default = "teststring"
 }
 
 variable "testNumberInt" {
@@ -38,6 +40,7 @@ variable "testNumberInt" {
 variable "testNumberFloat" {
   description = "This is a test variable of type float."
   type        = number
+  default = 3.14
 }
 
 variable "testBool" {
@@ -47,22 +50,26 @@ variable "testBool" {
 }
 
 variable "testList" {
-  description = "This is a test variable of type list."
+  description = "This is a test variable of type list of numbers."
   type        = list(number)
+  default = [1,2]
 }
 
 variable "testMap" {
   description = "This is a test variable of type map."
   type        = map(string)
+  default = {"key1": "value1"}
 }
 
 variable "testPassword" {
   description = "This is a test password with no default value"
   type        = string
   sensitive   = true
+  default = "test"
 }
 
 variable "testOptions" {
   description = "This is a test options array"
   type = string
+  default = "testoptions"
 }
