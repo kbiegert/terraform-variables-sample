@@ -24,6 +24,13 @@ variable "testObject" {
     })
 }
 
+variable "testListObject" {
+  description = "This is a test variable of type list(object)."
+  type        = list(object({
+      key2 = string
+    }))
+}
+
 variable "testString" {
   description = "This is a test variable of type string."
   type        = string
