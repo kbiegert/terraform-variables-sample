@@ -1,3 +1,7 @@
+variable "testNumber" {
+  description = "This is a test variable of number."
+  type        = number
+}
 variable "testNumberInt" {
   description = "This is a test variable of type integer."
   type        = number
