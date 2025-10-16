@@ -3,6 +3,11 @@ output testNumberInt {
     value = var.testNumberInt
 }
 
+output testNumber {
+    description = "output of test number"
+    value = var.testNumber
+}
+
 output testNumberFloat {
     description = "output of test number as float"
     value = var.testNumberFloat
