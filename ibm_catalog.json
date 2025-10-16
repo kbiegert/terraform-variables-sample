@@ -67,7 +67,6 @@
                         {
                             "key": "testBool",
                             "type": "boolean",
-                            "default_value": false,
                             "description": "This is a test variable of type bool.",
                             "required": true,
                             "virtual": false
@@ -75,7 +74,6 @@
                         {
                             "key": "testNumber",
                             "type": "number",
-                            "default_value": 0,
                             "description": "This is a test variable of number.",
                             "required": true,
                             "virtual": false
@@ -83,7 +81,6 @@
                         {
                             "key": "testNumberFloat",
                             "type": "int",
-                            "default_value": 0,
                             "description": "This is a test variable of type float.",
                             "required": true,
                             "virtual": false
@@ -91,7 +88,6 @@
                         {
                             "key": "testNumberInt",
                             "type": "float",
-                            "default_value": 0,
                             "description": "This is a test variable of type integer.",
                             "required": true,
                             "virtual": false
