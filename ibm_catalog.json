@@ -82,7 +82,7 @@
                         },
                         {
                             "key": "testNumberFloat",
-                            "type": "int",
+                            "type": "float",
                             "default_value": "__NULL__",
                             "description": "This is a test variable of type float.",
                             "required": true,
@@ -90,7 +90,7 @@
                         },
                         {
                             "key": "testNumberInt",
-                            "type": "float",
+                            "type": "int",
                             "default_value": "__NULL__",
                             "description": "This is a test variable of type integer.",
                             "required": true,
