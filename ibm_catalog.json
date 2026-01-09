@@ -75,10 +75,7 @@
             "diagrams": [
               {
                 "diagram": {
-                  "url_proxy": {
-                    "url": "https://raw.githubusercontent.com/kbiegert/terraform-variables-sample/main/reference-architecture/diagram.svg",
-                    "sha": "24ea57ac9a7416391a3410e37148da4154a2313b9e8813d44f31ee5e2caa56d5"
-                  },
+                  "url": "https://raw.githubusercontent.com/kbiegert/terraform-variables-sample/main/reference-architecture/diagram.svg",
                   "caption": "Terraform Variables Sample Architecture",
                   "type": "image/svg+xml"
                 },
