@@ -2,28 +2,46 @@
     "products": [
         {
             "name": "variable-sample",
-            "label": "variable-sample-test",
+            "label": "Variable Sample Test",
             "product_kind": "solution",
-            "tags": [ "virtualservers" ],
-            "keywords": [ "keyword1", "keyword2" ],
-            "short_description": "short description text",
-            "long_description": "long description text",
-            "offering_docs_url": "https://raw.githubusercontent.com/main/README.md",
+            "provider_name": "IBM",
+            "tags": ["dev_ops", "terraform", "ibm_created"],
+            "keywords": ["terraform", "variables", "testing", "sample"],
+            "short_description": "A sample deployable architecture demonstrating Terraform variable types",
+            "long_description": "This deployable architecture provides a minimal Terraform template to demonstrate and test various Terraform primitive types including strings, numbers, booleans, lists, maps, objects, and passwords. It is designed for testing and learning purposes.",
+            "offering_docs_url": "https://github.com/kbiegert/terraform-variables-sample/blob/main/README.md",
             "offering_icon_url": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4gPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJMYXllcl8xIiBkYXRhLW5hbWU9IkxheWVyIDEiIHZpZXdCb3g9IjAgMCAxMjAgMTM1Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2E1MjA1Njt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPjAxX0lOU1RBTkFfSWNvblNldDwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNTIsNC42NCw5LjU2LDI5LjE1QTE2LDE2LDAsMCwwLDEuNTcsNDNWOTJhMTYsMTYsMCwwLDAsOCwxMy44NEw1MiwxMzAuMzZhMTYsMTYsMCwwLDAsMTYsMGw0Mi40NS0yNC41MWExNiwxNiwwLDAsMCw4LTEzLjg0VjQzYTE2LDE2LDAsMCwwLTgtMTMuODRMNjgsNC42NEExNiwxNiwwLDAsMCw1Miw0LjY0WiI+PC9wYXRoPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTg5LjQsNDEuNTlBLjc2Ljc2LDAsMCwwLDg4LjM0LDQxYy0xNy44MSw3LjQ5LTM4LDIwLjQ1LTQ2LjgyLDQwYTEuNDQsMS40NCwwLDAsMS0xLjIxLjgzLDEuNDcsMS40NywwLDAsMS0uNjUtLjEyLDEuNCwxLjQsMCwwLDEtLjctMS44NmM5LTE5LjksMjkuMTktMzMuMTUsNDcuMjctNDFhLjY1LjY1LDAsMCwwLS4xNS0xLjIzLDMuMSwzLjEsMCwwLDAtLjU0LS4wNWMtMTUuNzgtLjQ1LTQwLjg1LDEwLjc4LTQ5LjQ1LDI2QzMyLDcwLjg1LDMyLDc4LjM3LDM2LjIyLDg1LjMzYy0uMTguNDQtLjg2LDIuNDYtMSwyLjg4TDMxLDgzLjljLS4yMS0uMjMtLjUyLDAtLjQxLjMxbDMsOC40NWMtLjUsMS41My0uNDQsMS40OS0uODYsMy4wN2ExLjQsMS40LDAsMCwwLDEsMS43MiwxLjI3LDEuMjcsMCwwLDAsLjQzLDAsMS40MSwxLjQxLDAsMCwwLDEuMjktMWMuMzMtMS4yNi40MS0xLjU3LjgtMi44bDcuMzItNC44OWMuMjUtLjE2LjE3LS41NS0uMTMtLjQ5bC01LjY0LjljLjI0LS41OS43My0yLjExLDEtMi43QzUyLDg0LjIsNjAsNzguNCw2Ni4yLDcxLjQ5QS45LjksMCwwLDAsNjUuNTEsNzBhMzcuNjYsMzcuNjYsMCwwLDAtOS4xMy45M2MtMS4yLjM0LTEuODMtLjM4LTEuNjMtMS4xMy4zOS0xLjQzLDkuNS0zLDE0LjQtMi44OGExLDEsMCwwLDAsLjgxLS4zNGMuNTctLjc1LDkuODQtMTQuMjcsMTcuNjYtMjIuMDcsMS4yNS0xLjI4LDEuODYtMi4wOCwxLjc4LTIuOSI+PC9wYXRoPjwvc3ZnPiA=",
+            "features": [
+                {
+                    "title": "Comprehensive Variable Types",
+                    "description": "Demonstrates all Terraform primitive types including string, number, boolean, list, map, and object"
+                },
+                {
+                    "title": "Secure Password Handling",
+                    "description": "Includes sensitive variable handling with password type"
+                },
+                {
+                    "title": "Multiple Deployment Flavors",
+                    "description": "Offers QuickStart, Flavor1, and Root variations for different use cases"
+                }
+            ],
             "flavors": [
                 {
                     "label": "QuickStart",
                     "name": "quickstart",
-                    "working_directory" : "defaultflavor/workingdirectory",
+                    "index": 1,
+                    "working_directory": "defaultflavor/workingdirectory",
                     "terraform_version": "1.2",
                     "install_type": "extension",
+                    "release_notes_url": "https://github.com/kbiegert/terraform-variables-sample/blob/main/README.md",
+                    "ignore_readme": false,
+                    "scripts": [],
+                    "change_notices": {},
+                    "compliance": {},
+                    "dependencies": [],
                     "licenses": [
                         {
-                            "name": "ApacheTest",
-                            "url": "https://opensource.org/license/apache-2-0/"
-                        },
-                        {
-                            "name": "ApacheTest2",
+                            "name": "Apache 2.0",
                             "url": "https://opensource.org/license/apache-2-0/"
                         }
                     ],
@@ -42,53 +60,76 @@
                             "role_crns": [
                                 "crn:v1:bluemix:public:iam::::serviceRole:Manager"
                             ],
-                            "service_name": "kms"
+                            "service_name": "kms",
+                            "notes": "Manager role required for Key Management Service operations"
                         },
                         {
                             "role_crns": [
                                 "crn:v1:bluemix:public:iam::::serviceRole:Manager",
                                 "crn:v1:bluemix:public:iam::::role:Administrator"
                             ],
-                            "service_name": "is.vpc"
+                            "service_name": "is.vpc",
+                            "notes": "Manager and Administrator roles required for VPC infrastructure management"
                         }
                     ],
                     "architecture": {
-                        "descriptions": "",
+                        "descriptions": "QuickStart variation provides a simplified deployment with minimal configuration",
                         "features": [
                             {
-                                "title": "Customized",
-                                "description": "Yes"
+                                "title": "Simplified Configuration",
+                                "description": "Pre-configured settings for rapid deployment"
                             },
                             {
-                                "title": "Separate VPC for management",
-                                "description": "Yes"
+                                "title": "Extension Install Type",
+                                "description": "Designed to extend existing infrastructure"
                             }
                         ],
                         "diagrams": [
                             {
                                 "diagram": {
-                                    "caption": "Custom Edge variation",
-                                    "url": "https://raw.githubusercontent.com/IBM/customized-deployable-architecture/main/images/custom-slz.svg",
+                                    "caption": "QuickStart Architecture",
+                                    "url": "https://raw.githubusercontent.com/kbiegert/terraform-variables-sample/main/reference-architecture/diagram.svg",
                                     "metadata": []
                                 },
-                                "description": "Custom Edge variation of Secure infrastructure on VPC for regulated industries requires at least 2 CPUs and 4 GB of memory.\n\nSecure infrastructure on VPC for regulated industries is implemented with virtual servers. It utilizes two separate Virtual Private Clouds (VPC), a Management VPC and a Workload VPC, to manage the environment and the deployed workload. Each VPC is a multi-zoned, multi-subnet implementation that keeps your workloads secure.\n\nVirtual Private Endpoints connect the VPCs to each other and to IBM Cloud services, including Key Protect, IAM, Container Registry, Object Storage, and any additional services. IBM Cloud services are configured for storage and key management.\n\nIBM Cloud Flow Logs for VPC enable the collection, storage, and presentation of information about the Internet Protocol (IP) traffic that is going to and from network interfaces within your VPC. In addition, Activity Tracker logs events from enabled services. IBM Cloud Flow Logs for VPC and Activity Tracker are included in this configuration. Additional security services can be added such as Hyper Connect Crypto Service."
+                                "description": "QuickStart variation provides a minimal setup for testing Terraform variable types with extension-based deployment."
                             }
                         ]
-                    }
+                    },
+                    "configuration": [
+                        {
+                            "key": "echoVersionValue",
+                            "type": "string",
+                            "default_value": "B",
+                            "description": "Use this to echo a version",
+                            "display_name": "Echo Version Value",
+                            "required": false
+                        },
+                        {
+                            "key": "echoInstallType",
+                            "type": "string",
+                            "default_value": "EXTENSION",
+                            "description": "Use this to echo an install type - setting to EXTENSION",
+                            "display_name": "Echo Install Type",
+                            "required": false
+                        }
+                    ]
                 },
                 {
                     "label": "Flavor1",
                     "name": "flavor1",
-                    "working_directory" : "./flavor1",
+                    "index": 2,
+                    "working_directory": "./flavor1",
                     "terraform_version": "1.2",
                     "install_type": "extension",
+                    "release_notes_url": "https://github.com/kbiegert/terraform-variables-sample/blob/main/README.md",
+                    "ignore_readme": false,
+                    "scripts": [],
+                    "change_notices": {},
+                    "compliance": {},
+                    "dependencies": [],
                     "licenses": [
                         {
-                            "name": "ApacheTest",
-                            "url": "https://opensource.org/license/apache-2-0/"
-                        },
-                        {
-                            "name": "ApacheTest2",
+                            "name": "Apache 2.0",
                             "url": "https://opensource.org/license/apache-2-0/"
                         }
                     ],
@@ -107,46 +148,73 @@
                             "role_crns": [
                                 "crn:v1:bluemix:public:iam::::serviceRole:Manager"
                             ],
-                            "service_name": "kms"
+                            "service_name": "kms",
+                            "notes": "Manager role required for Key Management Service operations"
                         },
                         {
                             "role_crns": [
                                 "crn:v1:bluemix:public:iam::::serviceRole:Manager",
                                 "crn:v1:bluemix:public:iam::::role:Administrator"
                             ],
-                            "service_name": "is.vpc"
+                            "service_name": "is.vpc",
+                            "notes": "Manager and Administrator roles required for VPC infrastructure management"
                         }
                     ],
                     "architecture": {
-                        "descriptions": "",
+                        "descriptions": "Flavor1 variation provides an alternative configuration for testing",
                         "features": [
                             {
-                                "title": "Customized",
-                                "description": "Yes"
+                                "title": "Alternative Configuration",
+                                "description": "Different settings for varied testing scenarios"
                             },
                             {
-                                "title": "Separate VPC for management",
-                                "description": "Yes"
+                                "title": "Extension Install Type",
+                                "description": "Designed to extend existing infrastructure"
                             }
                         ],
                         "diagrams": [
                             {
                                 "diagram": {
-                                    "caption": "Custom Edge variation",
-                                    "url": "https://raw.githubusercontent.com/IBM/customized-deployable-architecture/main/images/custom-slz.svg",
+                                    "caption": "Flavor1 Architecture",
+                                    "url": "https://raw.githubusercontent.com/kbiegert/terraform-variables-sample/main/reference-architecture/diagram.svg",
                                     "metadata": []
                                 },
-                                "description": "Custom Edge variation of Secure infrastructure on VPC for regulated industries requires at least 2 CPUs and 4 GB of memory.\n\nSecure infrastructure on VPC for regulated industries is implemented with virtual servers. It utilizes two separate Virtual Private Clouds (VPC), a Management VPC and a Workload VPC, to manage the environment and the deployed workload. Each VPC is a multi-zoned, multi-subnet implementation that keeps your workloads secure.\n\nVirtual Private Endpoints connect the VPCs to each other and to IBM Cloud services, including Key Protect, IAM, Container Registry, Object Storage, and any additional services. IBM Cloud services are configured for storage and key management.\n\nIBM Cloud Flow Logs for VPC enable the collection, storage, and presentation of information about the Internet Protocol (IP) traffic that is going to and from network interfaces within your VPC. In addition, Activity Tracker logs events from enabled services. IBM Cloud Flow Logs for VPC and Activity Tracker are included in this configuration. Additional security services can be added such as Hyper Connect Crypto Service."
+                                "description": "Flavor1 variation provides an alternative configuration for testing Terraform variable types with extension-based deployment."
                             }
                         ]
-                    }
+                    },
+                    "configuration": [
+                        {
+                            "key": "echoVersionValue",
+                            "type": "string",
+                            "default_value": "B",
+                            "description": "Use this to echo a version",
+                            "display_name": "Echo Version Value",
+                            "required": false
+                        },
+                        {
+                            "key": "echoInstallType",
+                            "type": "string",
+                            "default_value": "EXTENSION",
+                            "description": "Use this to echo an install type - setting to EXTENSION",
+                            "display_name": "Echo Install Type",
+                            "required": false
+                        }
+                    ]
                 },
                 {
                     "label": "Root Variation",
                     "name": "rootvariation",
-                    "working_directory" : ".",
+                    "index": 3,
+                    "working_directory": ".",
                     "terraform_version": "1.2",
                     "install_type": "fullstack",
+                    "release_notes_url": "https://github.com/kbiegert/terraform-variables-sample/blob/main/README.md",
+                    "ignore_readme": false,
+                    "scripts": [],
+                    "change_notices": {},
+                    "compliance": {},
+                    "dependencies": [],
                     "outputs": [
                         {
                             "description": "Use this to echo a version",
@@ -155,6 +223,42 @@
                         {
                             "description": "Use this to echo an install type - setting to FULLSTACK",
                             "key": "echoInstallType"
+                        },
+                        {
+                            "description": "Output of echoListType",
+                            "key": "echoListType"
+                        },
+                        {
+                            "description": "Output of test object type",
+                            "key": "testObject"
+                        },
+                        {
+                            "description": "Output of test string type",
+                            "key": "testString"
+                        },
+                        {
+                            "description": "Output of test number as integer",
+                            "key": "testNumberInt"
+                        },
+                        {
+                            "description": "Output of test number as float",
+                            "key": "testNumberFloat"
+                        },
+                        {
+                            "description": "Output of test bool",
+                            "key": "testBool"
+                        },
+                        {
+                            "description": "Output of test list",
+                            "key": "testList"
+                        },
+                        {
+                            "description": "Output of test map",
+                            "key": "testMap"
+                        },
+                        {
+                            "description": "Output of testOptions list",
+                            "key": "testOptions"
                         }
                     ],
                     "iam_permissions": [
@@ -162,41 +266,187 @@
                             "role_crns": [
                                 "crn:v1:bluemix:public:iam::::serviceRole:Manager"
                             ],
-                            "service_name": "kms"
+                            "service_name": "kms",
+                            "notes": "Manager role required for Key Management Service operations"
                         },
                         {
                             "role_crns": [
                                 "crn:v1:bluemix:public:iam::::serviceRole:Manager",
                                 "crn:v1:bluemix:public:iam::::role:Administrator"
                             ],
-                            "service_name": "is.vpc"
+                            "service_name": "is.vpc",
+                            "notes": "Manager and Administrator roles required for VPC infrastructure management"
                         }
                     ],
                     "architecture": {
-                        "descriptions": "",
+                        "descriptions": "Root variation provides a complete fullstack deployment with all variable types",
                         "features": [
                             {
-                                "title": "Customized",
-                                "description": "Yes"
+                                "title": "Complete Variable Coverage",
+                                "description": "Includes all Terraform variable types for comprehensive testing"
                             },
                             {
-                                "title": "Separate VPC for management",
-                                "description": "Yes"
+                                "title": "Fullstack Deployment",
+                                "description": "Complete infrastructure deployment from root directory"
                             }
                         ],
                         "diagrams": [
                             {
                                 "diagram": {
-                                    "caption": "Custom Edge variation",
-                                    "url": "https://raw.githubusercontent.com/IBM/customized-deployable-architecture/main/images/custom-slz.svg",
+                                    "caption": "Root Variation Architecture",
+                                    "url": "https://raw.githubusercontent.com/kbiegert/terraform-variables-sample/main/reference-architecture/diagram.svg",
                                     "metadata": []
                                 },
-                                "description": "Custom Edge variation of Secure infrastructure on VPC for regulated industries requires at least 2 CPUs and 4 GB of memory.\n\nSecure infrastructure on VPC for regulated industries is implemented with virtual servers. It utilizes two separate Virtual Private Clouds (VPC), a Management VPC and a Workload VPC, to manage the environment and the deployed workload. Each VPC is a multi-zoned, multi-subnet implementation that keeps your workloads secure.\n\nVirtual Private Endpoints connect the VPCs to each other and to IBM Cloud services, including Key Protect, IAM, Container Registry, Object Storage, and any additional services. IBM Cloud services are configured for storage and key management.\n\nIBM Cloud Flow Logs for VPC enable the collection, storage, and presentation of information about the Internet Protocol (IP) traffic that is going to and from network interfaces within your VPC. In addition, Activity Tracker logs events from enabled services. IBM Cloud Flow Logs for VPC and Activity Tracker are included in this configuration. Additional security services can be added such as Hyper Connect Crypto Service."
+                                "description": "Root variation provides a complete fullstack deployment demonstrating all Terraform primitive variable types including strings, numbers, booleans, lists, maps, objects, and passwords."
                             }
                         ]
-                    }
+                    },
+                    "configuration": [
+                        {
+                            "key": "echoVersionValue",
+                            "type": "string",
+                            "default_value": "B",
+                            "description": "Use this to echo a version",
+                            "display_name": "Echo Version Value",
+                            "required": false
+                        },
+                        {
+                            "key": "echoInstallType",
+                            "type": "string",
+                            "default_value": "FULLSTACK",
+                            "description": "Use this to echo an install type - setting to FULLSTACK",
+                            "display_name": "Echo Install Type",
+                            "required": false
+                        },
+                        {
+                            "key": "echoList",
+                            "type": "array",
+                            "description": "This is a test list",
+                            "display_name": "Echo List",
+                            "required": true,
+                            "default_value": "__NOT_SET__",
+                            "custom_config": {
+                                "type": "array",
+                                "grouping": "deployment",
+                                "original_grouping": "deployment",
+                                "config_constraints": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        {
+                            "key": "testObject",
+                            "type": "object",
+                            "description": "This is a test variable of type object",
+                            "display_name": "Test Object",
+                            "required": true,
+                            "default_value": "__NOT_SET__"
+                        },
+                        {
+                            "key": "testListObject",
+                            "type": "array",
+                            "description": "This is a test variable of type list(object)",
+                            "display_name": "Test List Object",
+                            "required": true,
+                            "default_value": "__NOT_SET__",
+                            "custom_config": {
+                                "type": "array",
+                                "grouping": "deployment",
+                                "original_grouping": "deployment",
+                                "config_constraints": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        {
+                            "key": "testString",
+                            "type": "string",
+                            "description": "This is a test variable of type string",
+                            "display_name": "Test String",
+                            "required": true,
+                            "default_value": "__NOT_SET__"
+                        },
+                        {
+                            "key": "testNumberInt",
+                            "type": "number",
+                            "default_value": 1,
+                            "description": "This is a test variable of type integer - not required in tf",
+                            "display_name": "Test Number Integer",
+                            "required": false
+                        },
+                        {
+                            "key": "testNumberFloat",
+                            "type": "number",
+                            "description": "This is a test variable of type float",
+                            "display_name": "Test Number Float",
+                            "required": true,
+                            "default_value": "__NOT_SET__"
+                        },
+                        {
+                            "key": "testBool",
+                            "type": "boolean",
+                            "default_value": false,
+                            "description": "This is a test variable of type bool",
+                            "display_name": "Test Boolean",
+                            "required": false
+                        },
+                        {
+                            "key": "testList",
+                            "type": "array",
+                            "description": "This is a test variable of type list",
+                            "display_name": "Test List",
+                            "required": true,
+                            "default_value": "__NOT_SET__",
+                            "custom_config": {
+                                "type": "array",
+                                "grouping": "deployment",
+                                "original_grouping": "deployment",
+                                "config_constraints": {
+                                    "type": "number"
+                                }
+                            }
+                        },
+                        {
+                            "key": "testMap",
+                            "type": "object",
+                            "description": "This is a test variable of type map",
+                            "display_name": "Test Map",
+                            "required": true,
+                            "default_value": "__NOT_SET__"
+                        },
+                        {
+                            "key": "testPassword",
+                            "type": "password",
+                            "description": "This is a test password with no default value",
+                            "display_name": "Test Password",
+                            "required": true,
+                            "default_value": "__NOT_SET__"
+                        },
+                        {
+                            "key": "testOptions",
+                            "type": "string",
+                            "description": "This is a test options array",
+                            "display_name": "Test Options",
+                            "required": true,
+                            "default_value": "__NOT_SET__",
+                            "options": [
+                                {
+                                    "displayname": "Option 1",
+                                    "value": "option1"
+                                },
+                                {
+                                    "displayname": "Option 2",
+                                    "value": "option2"
+                                },
+                                {
+                                    "displayname": "Option 3",
+                                    "value": "option3"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
-        }        
+        }
     ]
 }

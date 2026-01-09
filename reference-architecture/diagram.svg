@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .title { font: bold 24px sans-serif; fill: #161616; }
+      .subtitle { font: 16px sans-serif; fill: #525252; }
+      .box { fill: #e0e0e0; stroke: #161616; stroke-width: 2; }
+      .label { font: 14px sans-serif; fill: #161616; text-anchor: middle; }
+      .arrow { stroke: #0f62fe; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#0f62fe" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" class="title" text-anchor="middle">Variable Sample Architecture</text>
+  <text x="400" y="65" class="subtitle" text-anchor="middle">Terraform Variable Types Testing</text>
+  
+  <!-- Input Variables Box -->
+  <rect x="50" y="100" width="200" height="250" class="box" rx="5"/>
+  <text x="150" y="130" class="label" font-weight="bold">Input Variables</text>
+  <text x="150" y="155" class="label" font-size="12">• String</text>
+  <text x="150" y="175" class="label" font-size="12">• Number (int/float)</text>
+  <text x="150" y="195" class="label" font-size="12">• Boolean</text>
+  <text x="150" y="215" class="label" font-size="12">• List</text>
+  <text x="150" y="235" class="label" font-size="12">• Map</text>
+  <text x="150" y="255" class="label" font-size="12">• Object</text>
+  <text x="150" y="275" class="label" font-size="12">• List(Object)</text>
+  <text x="150" y="295" class="label" font-size="12">• Password (sensitive)</text>
+  <text x="150" y="315" class="label" font-size="12">• Options</text>
+  
+  <!-- Arrow -->
+  <path d="M 250 225 L 300 225" class="arrow"/>
+  
+  <!-- Terraform Processing Box -->
+  <rect x="300" y="150" width="200" height="150" class="box" rx="5"/>
+  <text x="400" y="180" class="label" font-weight="bold">Terraform Processing</text>
+  <text x="400" y="210" class="label" font-size="12">Variable Validation</text>
+  <text x="400" y="235" class="label" font-size="12">Type Checking</text>
+  <text x="400" y="260" class="label" font-size="12">Default Values</text>
+  
+  <!-- Arrow -->
+  <path d="M 500 225 L 550 225" class="arrow"/>
+  
+  <!-- Output Values Box -->
+  <rect x="550" y="100" width="200" height="250" class="box" rx="5"/>
+  <text x="650" y="130" class="label" font-weight="bold">Output Values</text>
+  <text x="650" y="155" class="label" font-size="12">• echoVersionValue</text>
+  <text x="650" y="175" class="label" font-size="12">• echoInstallType</text>
+  <text x="650" y="195" class="label" font-size="12">• echoListType</text>
+  <text x="650" y="215" class="label" font-size="12">• testObject</text>
+  <text x="650" y="235" class="label" font-size="12">• testString</text>
+  <text x="650" y="255" class="label" font-size="12">• testNumberInt</text>
+  <text x="650" y="275" class="label" font-size="12">• testNumberFloat</text>
+  <text x="650" y="295" class="label" font-size="12">• testBool</text>
+  <text x="650" y="315" class="label" font-size="12">• testList/Map/Options</text>
+  
+  <!-- Footer -->
+  <text x="400" y="380" class="subtitle" text-anchor="middle">Demonstrates Terraform primitive types for testing and learning</text>
+</svg>
+
+<!-- Made with Bob -->
