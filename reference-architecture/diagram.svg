@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .title { font: bold 24px sans-serif; fill: #161616; }
+      .subtitle { font: 16px sans-serif; fill: #525252; }
+      .box { fill: #e0e0e0; stroke: #161616; stroke-width: 2; }
+      .text { font: 14px sans-serif; fill: #161616; }
+      .label { font: bold 12px sans-serif; fill: #0f62fe; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f4f4f4"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="title">Terraform Variables Sample</text>
+  <text x="400" y="65" text-anchor="middle" class="subtitle">Demonstrating Terraform Variable Types</text>
+  
+  <!-- Variable Types Container -->
+  <rect x="50" y="100" width="700" height="450" class="box" rx="10"/>
+  <text x="400" y="130" text-anchor="middle" class="label">TERRAFORM VARIABLES</text>
+  
+  <!-- String Variables -->
+  <rect x="80" y="150" width="200" height="80" fill="#d0e2ff" stroke="#0f62fe" stroke-width="2" rx="5"/>
+  <text x="180" y="175" text-anchor="middle" class="label">String Types</text>
+  <text x="180" y="195" text-anchor="middle" class="text">• testString</text>
+  <text x="180" y="215" text-anchor="middle" class="text">• echoVersionValue</text>
+  
+  <!-- Number Variables -->
+  <rect x="300" y="150" width="200" height="80" fill="#d2f4ea" stroke="#24a148" stroke-width="2" rx="5"/>
+  <text x="400" y="175" text-anchor="middle" class="label">Number Types</text>
+  <text x="400" y="195" text-anchor="middle" class="text">• testNumberInt</text>
+  <text x="400" y="215" text-anchor="middle" class="text">• testNumberFloat</text>
+  
+  <!-- Boolean Variables -->
+  <rect x="520" y="150" width="200" height="80" fill="#ffd6e8" stroke="#d12771" stroke-width="2" rx="5"/>
+  <text x="620" y="175" text-anchor="middle" class="label">Boolean Types</text>
+  <text x="620" y="195" text-anchor="middle" class="text">• testBool</text>
+  
+  <!-- List Variables -->
+  <rect x="80" y="250" width="200" height="80" fill="#ffd4a0" stroke="#ff832b" stroke-width="2" rx="5"/>
+  <text x="180" y="275" text-anchor="middle" class="label">List Types</text>
+  <text x="180" y="295" text-anchor="middle" class="text">• testList</text>
+  <text x="180" y="315" text-anchor="middle" class="text">• echoList</text>
+  
+  <!-- Map Variables -->
+  <rect x="300" y="250" width="200" height="80" fill="#e8daff" stroke="#8a3ffc" stroke-width="2" rx="5"/>
+  <text x="400" y="275" text-anchor="middle" class="label">Map Types</text>
+  <text x="400" y="295" text-anchor="middle" class="text">• testMap</text>
+  
+  <!-- Object Variables -->
+  <rect x="520" y="250" width="200" height="80" fill="#bae6ff" stroke="#0072c3" stroke-width="2" rx="5"/>
+  <text x="620" y="275" text-anchor="middle" class="label">Object Types</text>
+  <text x="620" y="295" text-anchor="middle" class="text">• testObject</text>
+  <text x="620" y="315" text-anchor="middle" class="text">• testListObject</text>
+  
+  <!-- Sensitive Variables -->
+  <rect x="190" y="350" width="420" height="80" fill="#ffe6e6" stroke="#da1e28" stroke-width="2" rx="5"/>
+  <text x="400" y="375" text-anchor="middle" class="label">Sensitive Types</text>
+  <text x="400" y="395" text-anchor="middle" class="text">• testPassword (sensitive)</text>
+  
+  <!-- Output Section -->
+  <rect x="80" y="450" width="640" height="80" fill="#c6c6c6" stroke="#161616" stroke-width="2" rx="5"/>
+  <text x="400" y="475" text-anchor="middle" class="label">OUTPUTS</text>
+  <text x="400" y="495" text-anchor="middle" class="text">All input variables are echoed as outputs</text>
+  <text x="400" y="515" text-anchor="middle" class="text">for validation and testing purposes</text>
+</svg>
+
+<!-- Made with Bob -->
