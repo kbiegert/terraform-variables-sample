@@ -14,26 +14,30 @@
       "keywords": [
         "terraform",
         "variables",
-        "types",
         "sample",
-        "testing"
+        "testing",
+        "primitive types"
       ],
-      "short_description": "Sample Terraform automation demonstrating primitive variable types",
-      "long_description": "This deployable architecture provides a minimal Terraform template for working with Terraform primitive types including strings, numbers, booleans, lists, maps, and objects. It serves as a reference implementation for variable handling and type validation.",
-      "offering_docs_url": "https://github.com/kbiegert/terraform-variables-sample",
-      "offering_icon_url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIj4KICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzAwNzBmMiIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj5UVjwvdGV4dD4KPC9zdmc+",
+      "short_description": "Sample Terraform module demonstrating primitive variable types and configurations",
+      "long_description": "This deployable architecture provides a minimal Terraform template for working with Terraform primitive types including strings, numbers, booleans, lists, maps, objects, and passwords. It serves as a reference implementation for variable handling and type validation.",
+      "offering_docs_url": "https://github.com/terraform-ibm-modules/terraform-variables-sample",
+      "offering_icon_url": "https://raw.githubusercontent.com/terraform-ibm-modules/terraform-variables-sample/main/reference-architecture/diagram.svg",
       "features": [
         {
           "title": "Comprehensive Type Coverage",
           "description": "Demonstrates all Terraform primitive types including string, number, boolean, list, map, and object"
         },
         {
-          "title": "Variable Validation",
-          "description": "Examples of proper variable declaration, defaults, and type constraints"
+          "title": "Password Handling",
+          "description": "Shows proper handling of sensitive data using password type variables"
         },
         {
-          "title": "Testing Framework",
-          "description": "Ideal for testing catalog onboarding and variable handling in IBM Cloud"
+          "title": "Multiple Flavors",
+          "description": "Includes standard, default, and custom flavor configurations for different use cases"
+        },
+        {
+          "title": "Validation Examples",
+          "description": "Provides sample validation values for testing and development"
         }
       ],
       "flavors": [
@@ -41,10 +45,10 @@
           "name": "standard",
           "label": "Standard",
           "index": 1,
-          "short_description": "Standard deployment with all variable types",
+          "short_description": "Standard configuration with all variable types",
           "install_type": "fullstack",
           "working_directory": "./",
-          "release_notes_url": "https://github.com/kbiegert/terraform-variables-sample/releases",
+          "release_notes_url": "https://github.com/terraform-ibm-modules/terraform-variables-sample/releases",
           "terraform_version": "1.0.0",
           "ignore_readme": false,
           "scripts": [],
@@ -64,25 +68,21 @@
           "architecture": {
             "features": [
               {
-                "title": "Minimal Infrastructure",
-                "description": "No actual infrastructure is created - this is a variable testing template"
-              },
-              {
-                "title": "Type Safety",
-                "description": "Demonstrates proper type declarations and validation"
+                "title": "Full Variable Set",
+                "description": "Includes all variable types for comprehensive testing"
               }
             ],
             "diagrams": [
               {
                 "diagram": {
                   "url_proxy": {
-                    "url": "https://raw.githubusercontent.com/kbiegert/terraform-variables-sample/main/reference-architecture/diagram.svg",
-                    "sha": "24ea57ac9a7416391a3410e37148da4154a2313b9e8813d44f31ee5e2caa56d5"
+                    "url": "https://raw.githubusercontent.com/terraform-ibm-modules/terraform-variables-sample/main/reference-architecture/diagram.svg",
+                    "sha": "b42490e77efa365e0a57858e218dd180639b6b788ff837214d33f636d5647fcd"
                   },
                   "caption": "Terraform Variables Sample Architecture",
                   "type": "image/svg+xml"
                 },
-                "description": "This architecture demonstrates Terraform variable handling without creating actual infrastructure resources."
+                "description": "Architecture diagram showing the variable types and their relationships"
               }
             ]
           },
@@ -218,13 +218,13 @@
           ]
         },
         {
-          "name": "defaultflavor",
+          "name": "default",
           "label": "Default Flavor",
           "index": 2,
-          "short_description": "Default flavor with EXTENSION install type",
-          "install_type": "fullstack",
+          "short_description": "Default flavor with minimal configuration",
+          "install_type": "extension",
           "working_directory": "defaultflavor/workingdirectory",
-          "release_notes_url": "https://github.com/kbiegert/terraform-variables-sample/releases",
+          "release_notes_url": "https://github.com/terraform-ibm-modules/terraform-variables-sample/releases",
           "terraform_version": "1.0.0",
           "ignore_readme": false,
           "scripts": [],
@@ -244,21 +244,21 @@
           "architecture": {
             "features": [
               {
-                "title": "Extension Configuration",
-                "description": "Demonstrates EXTENSION install type configuration"
+                "title": "Minimal Configuration",
+                "description": "Simplified variable set for basic testing"
               }
             ],
             "diagrams": [
               {
                 "diagram": {
                   "url_proxy": {
-                    "url": "https://raw.githubusercontent.com/kbiegert/terraform-variables-sample/main/reference-architecture/diagram.svg",
-                    "sha": "24ea57ac9a7416391a3410e37148da4154a2313b9e8813d44f31ee5e2caa56d5"
+                    "url": "https://raw.githubusercontent.com/terraform-ibm-modules/terraform-variables-sample/main/reference-architecture/diagram.svg",
+                    "sha": "b42490e77efa365e0a57858e218dd180639b6b788ff837214d33f636d5647fcd"
                   },
                   "caption": "Default Flavor Architecture",
                   "type": "image/svg+xml"
                 },
-                "description": "Default flavor with EXTENSION install type configuration."
+                "description": "Simplified architecture with minimal variable configuration"
               }
             ]
           },
@@ -285,8 +285,8 @@
           "name": "flavor1",
           "label": "Flavor 1",
           "index": 3,
-          "short_description": "Alternative flavor with EXTENSION install type",
-          "install_type": "fullstack",
+          "short_description": "Alternative flavor configuration",
+          "install_type": "extension",
           "working_directory": "flavor1",
           "release_notes_url": "https://github.com/terraform-ibm-modules/terraform-variables-sample/releases",
           "terraform_version": "1.0.0",
@@ -309,7 +309,7 @@
             "features": [
               {
                 "title": "Alternative Configuration",
-                "description": "Alternative flavor demonstrating different configuration options"
+                "description": "Custom variable set for specific use cases"
               }
             ],
             "diagrams": [
@@ -317,12 +317,12 @@
                 "diagram": {
                   "url_proxy": {
                     "url": "https://raw.githubusercontent.com/terraform-ibm-modules/terraform-variables-sample/main/reference-architecture/diagram.svg",
-                    "sha": "24ea57ac9a7416391a3410e37148da4154a2313b9e8813d44f31ee5e2caa56d5"
+                    "sha": "b42490e77efa365e0a57858e218dd180639b6b788ff837214d33f636d5647fcd"
                   },
                   "caption": "Flavor 1 Architecture",
                   "type": "image/svg+xml"
                 },
-                "description": "Alternative flavor with simplified configuration."
+                "description": "Alternative architecture configuration"
               }
             ]
           },

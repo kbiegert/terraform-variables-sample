@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
-  <rect width="800" height="400" fill="#f0f0f0"/>
-  <text x="400" y="200" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#333">
     Terraform Variables Sample Architecture
   </text>
-  <text x="400" y="240" font-family="Arial" font-size="16" text-anchor="middle" fill="#666">
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#666">
     Demonstrates Terraform primitive types and variable handling
   </text>
 </svg>
