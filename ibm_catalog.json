@@ -75,10 +75,7 @@
             "diagrams": [
               {
                 "diagram": {
-                  "url_proxy": {
-                    "url": "https://raw.githubusercontent.com/terraform-ibm-modules/terraform-variables-sample/main/reference-architecture/diagram.svg",
-                    "sha": "b42490e77efa365e0a57858e218dd180639b6b788ff837214d33f636d5647fcd"
-                  },
+                  "url": "https://raw.githubusercontent.com/kbiegert/terraform-variables-sample/main/reference-architecture/diagram.svg",
                   "caption": "Terraform Variables Sample Architecture",
                   "type": "image/svg+xml"
                 },
@@ -251,10 +248,7 @@
             "diagrams": [
               {
                 "diagram": {
-                  "url_proxy": {
-                    "url": "https://raw.githubusercontent.com/terraform-ibm-modules/terraform-variables-sample/main/reference-architecture/diagram.svg",
-                    "sha": "b42490e77efa365e0a57858e218dd180639b6b788ff837214d33f636d5647fcd"
-                  },
+                  "url": "https://raw.githubusercontent.com/kbiegert/terraform-variables-sample/main/reference-architecture/diagram.svg",
                   "caption": "Default Flavor Architecture",
                   "type": "image/svg+xml"
                 },
@@ -315,10 +309,7 @@
             "diagrams": [
               {
                 "diagram": {
-                  "url_proxy": {
-                    "url": "https://raw.githubusercontent.com/terraform-ibm-modules/terraform-variables-sample/main/reference-architecture/diagram.svg",
-                    "sha": "b42490e77efa365e0a57858e218dd180639b6b788ff837214d33f636d5647fcd"
-                  },
+                  "url": "https://raw.githubusercontent.com/kbiegert/terraform-variables-sample/main/reference-architecture/diagram.svg",
                   "caption": "Flavor 1 Architecture",
                   "type": "image/svg+xml"
                 },
