@@ -13,7 +13,7 @@ variable "echoInstallType" {
 variable "echoList" {
   description = "this is a test list"
   type = list(string)
-  #default = ["string1", "string2"]
+  default = ["string1", "string2"]
 }
 
 
