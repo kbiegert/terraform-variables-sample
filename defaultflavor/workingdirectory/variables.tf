@@ -97,67 +97,63 @@ variable "testNull" {
 variable "appSecurityRules" {
   description = "Security group created for VSI"
   type = object({
-    name = string
-    rules = list(
-      object({
-        name      = string
-        direction = string
-        source    = string
-        tcp = optional(
-          object({
-            port_max = number
-            port_min = number
-          })
-        )
-        udp = optional(
-          object({
-            port_max = number
-            port_min = number
-          })
-        )
-        icmp = optional(
-          object({
-            type = number
-            code = number
-          })
-        )
+    name  = string
+    rules = list(object({
+      name      = string
+      direction = string
+      source    = string
+
+      tcp = object({
+        port_max = number
+        port_min = number
       })
-    )
+
+      udp = object({
+        port_max = number
+        port_min = number
+      })
+
+      icmp = object({
+        type = number
+        code = number
+      })
+    }))
   })
-  default = { 
-    "name": "httpd-sg",
-    "rules": [
+
+  default = {
+    name  = "httpd-sg"
+    rules = [
       {
-        "name"      : "httpd-port-80",
-        "direction" : "inbound",
-        "source"    : "0.0.0.0/0",
-        "tcp": {
-            "port_max" : 80,
-            "port_min" : 80
-        }
+        name      = "httpd-port-80"
+        direction = "inbound"
+        source    = "0.0.0.0/0"
+        tcp  = { port_max = 80,  port_min = 80 }
+        udp  = { port_max = 0,   port_min = 0 }  
+        icmp = { type = 3,       code = 4 }       
       },
       {
-        "name"      : "ssh-port-22",
-        "direction" : "inbound",
-        "source"    : "0.0.0.0/0",
-        "tcp" : {
-            "port_max" : 22,
-            "port_min" : 22
-        }
+        name      = "ssh-port-22"
+        direction = "inbound"
+        source    = "0.0.0.0/0"
+        tcp  = { port_max = 22,  port_min = 22 }
+        udp  = { port_max = 0,   port_min = 0 }   
+        icmp = { type = 3,       code = 4 }      
       },
       {
-        "name"      : "outbound-off",
-        "direction" : "outbound",
-        "source"    : "0.0.0.0/0"
+        name      = "outbound-off"
+        direction = "outbound"
+        source    = "0.0.0.0/0"
+        tcp  = { port_max = 0,   port_min = 0 }   
+        udp  = { port_max = 0,   port_min = 0 }   
+        icmp = { type = 3,       code = 4 }      
       },
-      { 
-        "name"      : "httpd-port-443",
-        "direction" : "inbound",
-        "source"    : "0.0.0.0/0",
-        "tcp": {
-            "port_max": 443,
-            "port_min": 443
-        }
+      {
+        name      = "httpd-port-443"
+        direction = "inbound"
+        source    = "0.0.0.0/0"
+        tcp  = { port_max = 443, port_min = 443 }
+        udp  = { port_max = 0,   port_min = 0 }   
+        icmp = { type = 3,       code = 4 }       
       }
     ]
   }
