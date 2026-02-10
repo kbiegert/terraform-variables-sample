@@ -16,7 +16,7 @@
                     "name": "quickstart",
                     "working_directory" : "defaultflavor/workingdirectory",
                     "terraform_version": "1.2",
-                    "install_type": "extension",
+                    "install_type": "fullstack",
                     "licenses": [
                         {
                             "name": "ApacheTest",
@@ -27,79 +27,65 @@
                             "url": "https://opensource.org/license/apache-2-0/"
                         }
                     ],
-                    "outputs": [
+                    "configuration": [
                         {
-                            "description": "Use this to echo a version",
+                            "key": "testNotSet",
+                            "default_value": "__NOT_SET__"
+                        },
+                        {
+                            "key": "testNull",
+                            "default_value": "__NULL__"
+                        },
+                        {
                             "key": "echoVersionValue"
                         },
                         {
-                            "description": "Use this to echo an install type - setting to EXTENSION",
                             "key": "echoInstallType"
-                        }
-                    ],
-                    "iam_permissions": [
-                        {
-                            "role_crns": [
-                                "crn:v1:bluemix:public:iam::::serviceRole:Manager"
-                            ],
-                            "service_name": "kms"
                         },
                         {
-                            "role_crns": [
-                                "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-                                "crn:v1:bluemix:public:iam::::role:Administrator"
-                            ],
-                            "service_name": "is.vpc"
-                        }
-                    ],
-                    "architecture": {
-                        "descriptions": "",
-                        "features": [
-                            {
-                                "title": "Customized",
-                                "description": "Yes"
-                            },
-                            {
-                                "title": "Separate VPC for management",
-                                "description": "Yes"
-                            }
-                        ],
-                        "diagrams": [
-                            {
-                                "diagram": {
-                                    "caption": "Custom Edge variation",
-                                    "url": "https://raw.githubusercontent.com/IBM/customized-deployable-architecture/main/images/custom-slz.svg",
-                                    "metadata": []
-                                },
-                                "description": "Custom Edge variation of Secure infrastructure on VPC for regulated industries requires at least 2 CPUs and 4 GB of memory.\n\nSecure infrastructure on VPC for regulated industries is implemented with virtual servers. It utilizes two separate Virtual Private Clouds (VPC), a Management VPC and a Workload VPC, to manage the environment and the deployed workload. Each VPC is a multi-zoned, multi-subnet implementation that keeps your workloads secure.\n\nVirtual Private Endpoints connect the VPCs to each other and to IBM Cloud services, including Key Protect, IAM, Container Registry, Object Storage, and any additional services. IBM Cloud services are configured for storage and key management.\n\nIBM Cloud Flow Logs for VPC enable the collection, storage, and presentation of information about the Internet Protocol (IP) traffic that is going to and from network interfaces within your VPC. In addition, Activity Tracker logs events from enabled services. IBM Cloud Flow Logs for VPC and Activity Tracker are included in this configuration. Additional security services can be added such as Hyper Connect Crypto Service."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "label": "Flavor1",
-                    "name": "flavor1",
-                    "working_directory" : "./flavor1",
-                    "terraform_version": "1.2",
-                    "install_type": "extension",
-                    "licenses": [
-                        {
-                            "name": "ApacheTest",
-                            "url": "https://opensource.org/license/apache-2-0/"
+                            "key": "echoList"
                         },
                         {
-                            "name": "ApacheTest2",
-                            "url": "https://opensource.org/license/apache-2-0/"
+                            "key": "testObject"
+                        },
+                        {
+                            "key": "testListObject"
+                        },
+                        {
+                            "key": "testString"
+                        },
+                        {
+                            "key": "testNumberInt"
+                        },
+                        {
+                            "key": "testNumberFloat"
+                        },
+                        {
+                            "key": "testBool"
+                        },
+                        {
+                            "key": "testList"
+                        },
+                        {
+                            "key": "testMap"
+                        },
+                        {
+                            "key": "testPassword"
+                        },
+                        {
+                            "key": "testOptions"
+                        },
+                        {
+                            "key": "appSecurityRules"
                         }
                     ],
+                    "schematics_env_values": {
+                        "value": "[{\"name\": \"TF_LOG\",\"value\": \"TRACE\",\"secure\": true,\"hidden\": true},{\"name\": \"TF_IGNORE\",\"value\": \"TRACE\",\"secure\": false,\"hidden\": false}]"
+                    },
                     "outputs": [
                         {
-                            "description": "Use this to echo a version",
-                            "key": "echoVersionValue"
-                        },
-                        {
-                            "description": "Use this to echo an install type - setting to EXTENSION",
-                            "key": "echoInstallType"
+                            "description": "Use this to echo a variable",
+                            "key": "testNotSet"
                         }
                     ],
                     "iam_permissions": [
@@ -147,14 +133,65 @@
                     "working_directory" : ".",
                     "terraform_version": "1.2",
                     "install_type": "fullstack",
-                    "outputs": [
+                                        "configuration": [
                         {
-                            "description": "Use this to echo a version",
+                            "key": "testNotSet",
+                            "default_value": "__NOT_SET__"
+                        },
+                        {
+                            "key": "testNull",
+                            "default_value": "__NULL__"
+                        },
+                        {
                             "key": "echoVersionValue"
                         },
                         {
-                            "description": "Use this to echo an install type - setting to FULLSTACK",
                             "key": "echoInstallType"
+                        },
+                        {
+                            "key": "echoList"
+                        },
+                        {
+                            "key": "testObject"
+                        },
+                        {
+                            "key": "testListObject"
+                        },
+                        {
+                            "key": "testString"
+                        },
+                        {
+                            "key": "testNumberInt"
+                        },
+                        {
+                            "key": "testNumberFloat"
+                        },
+                        {
+                            "key": "testBool"
+                        },
+                        {
+                            "key": "testList"
+                        },
+                        {
+                            "key": "testMap"
+                        },
+                        {
+                            "key": "testPassword"
+                        },
+                        {
+                            "key": "testOptions"
+                        },
+                        {
+                            "key": "appSecurityRules"
+                        }
+                    ],
+                    "schematics_env_values": {
+                        "value": "[{\"name\": \"TF_LOG\",\"value\": \"TRACE\",\"secure\": true,\"hidden\": true},{\"name\": \"TF_IGNORE\",\"value\": \"TRACE\",\"secure\": false,\"hidden\": false}]"
+                    },
+                    "outputs": [
+                        {
+                            "description": "Use this to echo a variable",
+                            "key": "testNull"
                         }
                     ],
                     "iam_permissions": [
