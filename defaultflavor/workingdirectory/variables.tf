@@ -22,6 +22,7 @@ variable "testObject" {
   type        = object({
       key2 = string
     })
+  default = {key2 = "test-object-value"}   
 }
 
 variable "testListObject" {
@@ -29,11 +30,13 @@ variable "testListObject" {
   type        = list(object({
       key2 = string
     }))
+  default = [{key2 = "value1"}, {key2 = "value2"}]  
 }
 
 variable "testString" {
   description = "This is a test variable of type string."
   type        = string
+  default = "aTestString"
 }
 
 variable "testNumberInt" {
@@ -45,6 +48,7 @@ variable "testNumberInt" {
 variable "testNumberFloat" {
   description = "This is a test variable of type float."
   type        = number
+  default = 3.14
 }
 
 variable "testBool" {
@@ -56,32 +60,38 @@ variable "testBool" {
 variable "testList" {
   description = "This is a test variable of type list."
   type        = list(number)
+  default = [1, 2, 3]
 }
 
 variable "testMap" {
   description = "This is a test variable of type map."
   type        = map(string)
+  default = {key1 = "value1", key2 = "value2"}
 }
 
 variable "testPassword" {
   description = "This is a test password with no default value"
   type        = string
   sensitive   = true
+  default = "1234"
 }
 
 variable "testOptions" {
   description = "This is a test options array"
   type = string
+  default = "option1"
 }
 
 variable "testNotSet" {
   description = "This is being set to NOT_SET in manifest"
   type = string
+  default = "__NOT_SET__"
 }
 
 variable "testNull" {
   description = "This is being set to NULL in manifest"
   type = string
+  default = "__NULL__"
 }
 
 variable "appSecurityRules" {

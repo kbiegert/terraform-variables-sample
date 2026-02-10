@@ -27,58 +27,6 @@
                             "url": "https://opensource.org/license/apache-2-0/"
                         }
                     ],
-                    "configuration": [
-                        {
-                            "key": "testNotSet",
-                            "default_value": "__NOT_SET__"
-                        },
-                        {
-                            "key": "testNull",
-                            "default_value": "__NULL__"
-                        },
-                        {
-                            "key": "echoVersionValue"
-                        },
-                        {
-                            "key": "echoInstallType"
-                        },
-                        {
-                            "key": "echoList"
-                        },
-                        {
-                            "key": "testObject"
-                        },
-                        {
-                            "key": "testListObject"
-                        },
-                        {
-                            "key": "testString"
-                        },
-                        {
-                            "key": "testNumberInt"
-                        },
-                        {
-                            "key": "testNumberFloat"
-                        },
-                        {
-                            "key": "testBool"
-                        },
-                        {
-                            "key": "testList"
-                        },
-                        {
-                            "key": "testMap"
-                        },
-                        {
-                            "key": "testPassword"
-                        },
-                        {
-                            "key": "testOptions"
-                        },
-                        {
-                            "key": "appSecurityRules"
-                        }
-                    ],
                     "schematics_env_values": {
                         "value": "[{\"name\": \"TF_LOG\",\"value\": \"TRACE\",\"secure\": true,\"hidden\": true},{\"name\": \"TF_IGNORE\",\"value\": \"TRACE\",\"secure\": false,\"hidden\": false}]"
                     },
@@ -133,58 +81,6 @@
                     "working_directory" : ".",
                     "terraform_version": "1.2",
                     "install_type": "fullstack",
-                                        "configuration": [
-                        {
-                            "key": "testNotSet",
-                            "default_value": "__NOT_SET__"
-                        },
-                        {
-                            "key": "testNull",
-                            "default_value": "__NULL__"
-                        },
-                        {
-                            "key": "echoVersionValue"
-                        },
-                        {
-                            "key": "echoInstallType"
-                        },
-                        {
-                            "key": "echoList"
-                        },
-                        {
-                            "key": "testObject"
-                        },
-                        {
-                            "key": "testListObject"
-                        },
-                        {
-                            "key": "testString"
-                        },
-                        {
-                            "key": "testNumberInt"
-                        },
-                        {
-                            "key": "testNumberFloat"
-                        },
-                        {
-                            "key": "testBool"
-                        },
-                        {
-                            "key": "testList"
-                        },
-                        {
-                            "key": "testMap"
-                        },
-                        {
-                            "key": "testPassword"
-                        },
-                        {
-                            "key": "testOptions"
-                        },
-                        {
-                            "key": "appSecurityRules"
-                        }
-                    ],
                     "schematics_env_values": {
                         "value": "[{\"name\": \"TF_LOG\",\"value\": \"TRACE\",\"secure\": true,\"hidden\": true},{\"name\": \"TF_IGNORE\",\"value\": \"TRACE\",\"secure\": false,\"hidden\": false}]"
                     },
