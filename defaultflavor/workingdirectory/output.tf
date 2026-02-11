@@ -56,6 +56,7 @@ output "testMap" {
 output "testPassword" {
   description = "output of testPassword"
   value       = var.testPassword
+  sensitive = true
 }
 output "testOptions" {
   description = "output of testOptions"
